@@ -1017,3 +1017,53 @@ footer p {
   font-size: 16px;
   color: #333;
 }
+
+
+.section-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.corner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #222;
+  position: absolute;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
