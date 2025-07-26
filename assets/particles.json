@@ -8,9 +8,9 @@
       "enable": true,
       "distance": 150,
       "color": "#000000",
-      "opacity": 0.08,
+      "opacity": 0.2,
       "width": 1
     },
-    "move": { "enable": true, "speed": 1 }
+    "move": { "enable": true, "speed": 0.5 }
   }
 }
