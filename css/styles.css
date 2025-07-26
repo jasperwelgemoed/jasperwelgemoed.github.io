@@ -948,7 +948,7 @@ footer p {
   z-index: 0;
   pointer-events: none;
     /* Add this background */
-  background: rgba(200, 200, 200, 0.08); /* Light gray with subtle transparency */
+  background: rgba(100, 100, 100, 0.08); /* Light gray with subtle transparency */
 }
 
 .centered-hero > *:not(#particles-js) {
