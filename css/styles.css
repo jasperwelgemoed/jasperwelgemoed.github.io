@@ -69,7 +69,7 @@ nav {
     align-items: center;
     position: relative;
 
-    background-color: rgba(255, 255, 255, 0.85); /* Slight opacity */
+    background-color: rgba(255, 255, 255, 0.6); /* Slight opacity */
     backdrop-filter: blur(6px); /* Optional: adds a soft blur behind */
     border-radius: 12px;
     margin: 10px 20px; /* Adds spacing from screen edges */
