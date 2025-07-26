@@ -961,3 +961,57 @@ footer p {
   margin-right: 10px;
   vertical-align: middle;
 }
+
+.bio-section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.bio-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.bio-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.bio-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.bio-title {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.bio-location {
+  font-size: 14px;
+  color: #777;
+}
+
+.bio-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.bio-text h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bio-text p {
+  font-size: 16px;
+  color: #333;
+}
