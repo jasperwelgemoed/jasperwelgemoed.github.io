@@ -1055,3 +1055,22 @@ footer p {
   max-width: 600px;
 }
 
+.about-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-heading a {
+  color: #3aa398; /* or any petrol tone you like */
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.about-heading a:hover {
+  color: #63c5b8;
+}
+
+
