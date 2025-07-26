@@ -62,19 +62,27 @@ p {
 
 /* NAVBAR */
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 40px; /* Add horizontal padding */
-    height: 80px;
-    align-items: center;
-    position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  height: 80px;
 
-    background-color: rgba(255, 255, 255, 0.9); /* Slight opacity */
-    backdrop-filter: blur(1px); /* Optional: adds a soft blur behind */
-    border-radius: 12px;
-    margin: 10px 20px; /* Adds spacing from screen edges */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+  position: sticky;
+  top: 0;
+  z-index: 100; /* ensure it stays above particles and other content */
+
+  /* ✨ Glassmorphism effect */
+  background-color: rgba(255, 255, 255, 0.2);  /* lower alpha for more transparency */
+  backdrop-filter: blur(10px);                /* stronger blur for glass effect */
+  -webkit-backdrop-filter: blur(10px);        /* Safari support */
+
+  border-radius: 12px;
+  margin: 10px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);  /* optional frosted border */
 }
+
 
 nav .left a {
     color: var(--text-color);
