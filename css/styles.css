@@ -160,7 +160,7 @@ nav .mobile-nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(200, 200, 200, 0.08);;
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
