@@ -959,4 +959,5 @@ footer p {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+  vertical-align: middle;
 }
