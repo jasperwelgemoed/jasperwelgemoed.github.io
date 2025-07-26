@@ -964,80 +964,31 @@ footer p {
 }
 
 .bio-section {
-  padding: 60px 0;
-  text-align: center;
-  background-color: #fff;
   margin-top: 100px;
-}
-
-.bio-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
-
-.bio-image img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.bio-name {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.bio-title {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 5px;
-}
-
-.bio-location {
-  font-size: 14px;
-  color: #777;
-}
-
-.bio-text {
-  max-width: 600px;
-  text-align: left;
-}
-
-.bio-text h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.bio-text p {
-  font-size: 16px;
-  color: #333;
-}
-
-
-.section-title {
-  position: relative;
   text-align: center;
-  margin-bottom: 50px;
+  position: relative;
 }
 
 .section-title h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: 2px;
-  margin: 20px auto;
+  margin-bottom: 60px;
+}
+
+.bio-wrapper {
+  position: relative;
   display: inline-block;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .corner {
   width: 20px;
   height: 20px;
-  border: 3px solid #222;
+  border: 3px solid #2a2a2a;
   position: absolute;
+  z-index: 2;
 }
 
 .top-left {
@@ -1067,3 +1018,40 @@ footer p {
   border-left: none;
   border-top: none;
 }
+
+.bio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.bio-image {
+  text-align: center;
+}
+
+.bio-image img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.bio-name {
+  margin: 20px 0 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.bio-title,
+.bio-location {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.bio-text {
+  max-width: 600px;
+}
+
