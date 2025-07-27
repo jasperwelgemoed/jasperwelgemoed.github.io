@@ -83,7 +83,7 @@ We first trained a GAN conditioned on both the character (e.g., 'A', 'B', 'C') a
 
 ### 2. Style Extraction with StyleGAN
 
-We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature. Using StyleGAN, we combined the latent vectors ($w$) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
+We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature. Using StyleGAN, we combined the latent vectors (**W**) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   
