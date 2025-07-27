@@ -6,6 +6,7 @@ skills:
   - AI
   - Computer Vision
 main-image: /image.png
+Date: 2025
 ---
 
 [Project Report](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)
