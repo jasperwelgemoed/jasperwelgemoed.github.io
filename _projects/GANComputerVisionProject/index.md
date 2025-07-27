@@ -90,17 +90,18 @@ We then used **StyleGAN**, a powerful GAN architecture that generates images pro
   <img src="https://hackmd.io/_uploads/H15YhghTJe.jpg" alt="Latent vector mixing" width="400">
 </div>
 
-To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**, which proved more effective than perceptual loss for this kind of data.
-
-This allowed us to embed and manipulate real handwriting styles for synthetic generation.
+To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**. This allowed us to embed and manipulate real handwriting styles for synthetic generation.
 
 ---
 
 ## Results
 
-We successfully trained StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST. However, attempts to extract and recombine style vectors from real handwriting images yielded incoherent outputs, likely due to the complexity of the latent space. 
+We successfully trained a StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST.
 
-![Training Example](/_projects/GANComputerVisionProject/GANGeneration.gif)
+<figure>
+  <img src="/_projects/GANComputerVisionProject/GANGeneration.gif" alt="Training Example" width="400">
+  <figcaption>Figure 1: Training example of handwriting generation using a GAN.</figcaption>
+</figure>
 
 
 
