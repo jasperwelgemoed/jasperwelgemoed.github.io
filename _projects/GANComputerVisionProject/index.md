@@ -36,7 +36,7 @@ We first trained a GAN conditioned on both the character (e.g., 'A', 'B', 'C') a
 
 We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature.
 
-![StyleGAN diagram](https://hackmd.io/_uploads/Bkj13sMakg.png)
+<img src="https://hackmd.io/_uploads/Bkj13sMakg.png" alt="StyleGAN diagram" width="400">
 
 Using StyleGAN, we combined the latent vectors ($w$) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
 
