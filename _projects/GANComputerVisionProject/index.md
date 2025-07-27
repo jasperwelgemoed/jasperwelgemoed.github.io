@@ -12,7 +12,7 @@ main-image: /image.png
 
   <a href="https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjx" target="_blank" style="
     background-color: #007bff;
-    color: white;
+    color: black;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
@@ -23,7 +23,7 @@ main-image: /image.png
 
   <a href="https://colab.research.google.com/drive/17uTkq5Dj2RDwaOkxgT3SqELEoRYLTl47?usp=sharing" target="_blank" style="
     background-color: #20c997;
-    color: white;
+    color: black;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
