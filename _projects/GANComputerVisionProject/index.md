@@ -101,7 +101,10 @@ This allowed us to embed and manipulate real handwriting styles for synthetic ge
 
 We successfully trained StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST. However, attempts to extract and recombine style vectors from real handwriting images yielded incoherent outputs, likely due to the complexity of the latent space and dataset limitations. Despite these challenges, the project lays strong groundwork for future improvements using higher resolution images, StyleGAN2/3, and more robust datasets.
 
-![Training of Handwriting Generation](/GANGeneration.mp4)
+<video width="400" controls autoplay loop muted>
+  <source src="/GANGeneration.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 
