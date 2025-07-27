@@ -13,7 +13,7 @@ main-image: /image.png
   Project Report
 </a>
 &nbsp;&nbsp;
-<a href="(https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB)">
+<a href="https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB">
   <img src="/code_icon-icons.webp" alt="Code" width="16" style="vertical-align: middle; margin-right: 4px;">
   Project Code
 </a>
