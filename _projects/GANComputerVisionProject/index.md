@@ -1,17 +1,12 @@
 ---
 layout: post
 title: Recreating Handwriting using Generative Adverserial Networks
-description: Developed a Computer Vision model using Generative Adversarial Networks (GANs) to recreate personalized handwriting styles, enabling the generation of handwritten text from style inputs using datasets like MNIST, NIST, and custom handwriting samples.
+description: Developed a Computer Vision model using Generative Adversarial Networks (GANs) to recreate personalized handwriting styles, enabling the generation of handwritten text from style inputs using datasets like MNIST, NIST, and custom handwriting samples. 
 skills:
   - AI
   - Computer Vision
 main-image: /image.png
 ---
-Recreating Handwriting using Generative Adverserial Networks
-===
-By: Freek Müller, Jasper Welgemoed and Kasper Vaessen
-
-Date: 8th of April 2025
 
 [Project Report](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)
 
