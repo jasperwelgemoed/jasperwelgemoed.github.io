@@ -12,11 +12,15 @@ main-image: /image.png
   <img src="/reporticon.png" alt="PDF" width="16" style="vertical-align: middle; margin-right: 4px;">
   Project Report
 </a>
-&nbsp;&nbsp;
-<a href="https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB">
-  <img src="/code_icon-icons.webp" alt="Code" width="16" style="vertical-align: middle; margin-right: 4px;">
-  Project Code
-</a>
+
+[Project Report](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)
+[Data Extraction Code](https://colab.research.google.com/drive/17uTkq5Dj2RDwaOkxgT3SqELEoRYLTl47?usp=sharing)
+
+[Character one-hot encoding training](https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB)
+
+[Character + Style one-hot encoding training](https://colab.research.google.com/drive/15fV1XdnsQa_IY56wmCsjLJg7ClByYHdi#scrollTo=Gq6eUDbOqNwp)
+
+[StyleGAN + Style extraction](https://colab.research.google.com/drive/1ZnQXRduWscCrEuTa0UI-Qaxis3ZdfsGB?usp=sharing)
 
 ## Aim of the project
 
@@ -40,7 +44,7 @@ We then used **StyleGAN**, a powerful GAN architecture that generates images pro
 
 Using StyleGAN, we combined the latent vectors ($w$) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
 
-![Latent vector mixing](https://hackmd.io/_uploads/H15YhghTJe.jpg)
+<img src="https://hackmd.io/_uploads/H15YhghTJe.jpg" alt="Latent vector mixing" width="400">
 
 To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**, which proved more effective than perceptual loss for this kind of data.
 
