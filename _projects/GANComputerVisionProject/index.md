@@ -9,11 +9,35 @@ main-image: /image.png
 ---
 
 [Project Report](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)
+[Project Code](https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB)
 
 ## Aim of the project
 
 For this project me and my teammates aimed to explore whether Generative Adversarial Networks can be used to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to test personal style replication. 
 
+---
+
+## Method
+
+Our project explored two approaches to generating personalized handwriting using GANs.
+
+### 1. One-Hot Conditioned GAN
+
+We first trained a GAN conditioned on both the character (e.g., 'A', 'B', 'C') and the writer's identity, using one-hot encoded vectors. This setup allowed the model to separate **content** (what to write) from **style** (how it looks), enabling generation of letters in different personal handwriting styles.
+
+### 2. Style Extraction with StyleGAN
+
+We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature.
+
+![StyleGAN diagram](https://hackmd.io/_uploads/Bkj13sMakg.png)
+
+Using StyleGAN, we combined the latent vectors ($w$) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
+
+![Latent vector mixing](https://hackmd.io/_uploads/H15YhghTJe.jpg)
+
+To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**, which proved more effective than perceptual loss for this kind of data.
+
+This allowed us to embed and manipulate real handwriting styles for synthetic generation.
 
 ---
 
