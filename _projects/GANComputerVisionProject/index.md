@@ -7,11 +7,64 @@ skills:
   - Computer Vision
 main-image: /image.png
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
 
-<a href="https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx">
-  <img src="/reporticon.png" alt="PDF" width="16" style="vertical-align: middle; margin-right: 4px;">
-  Project Report
-</a>
+  <a href="https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjx" target="_blank" style="
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    📄 Project Report
+  </a>
+
+  <a href="https://colab.research.google.com/drive/17uTkq5Dj2RDwaOkxgT3SqELEoRYLTl47?usp=sharing" target="_blank" style="
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    📊 Data Extraction Code
+  </a>
+
+  <a href="https://colab.research.google.com/drive/162i1A9PvQPk1pWAMXpI4sF0svXwUVVTT?usp=sharing" target="_blank" style="
+    background-color: #6f42c1;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    🧬 Char One-hot Training
+  </a>
+
+  <a href="https://colab.research.google.com/drive/15fV1xdnsQa_IY56wmCsjLJg7CLByYHdi#scrollTo=Gq6eUDbDqNwp" target="_blank" style="
+    background-color: #fd7e14;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    🧪 Char+Style One-hot Training
+  </a>
+
+  <a href="https://colab.research.google.com/drive/17nQXRduWsscCrEuTa0UI-Qaxis3ZdfsGB?usp=sharing" target="_blank" style="
+    background-color: #20c997;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    🎨 StyleGAN + Extraction
+  </a>
+
+</div>
 
 [Project Report](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)
 [Data Extraction Code](https://colab.research.google.com/drive/17uTkq5Dj2RDwaOkxgT3SqELEoRYLTl47?usp=sharing)
