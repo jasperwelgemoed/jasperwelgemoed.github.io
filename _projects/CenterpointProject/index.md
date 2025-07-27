@@ -1,10 +1,11 @@
 ---
 layout: post
-title: project title
-description:  short description of the project
+title: Improving 3D Object Detection with Modular Enhancements to the CenterPoint Framework
+description:  This project investigates improvements to a CenterPoint-based LiDAR 3D object detector on the View of Delft dataset. Key extensions include semantic fusion via PointPainting, data augmentation for both LiDAR and image modalities, and architectural changes such as a multiview fusion neck and dropout. 
 skills: 
-- skill 1
-- skill 2
+- AI
+- Advanced Machine Perception
+- GitHub
 main-image: /PointPainting.jpg
 ---
 
