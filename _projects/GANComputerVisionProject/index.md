@@ -83,13 +83,12 @@ We first trained a GAN conditioned on both the character (e.g., 'A', 'B', 'C') a
 
 ### 2. Style Extraction with StyleGAN
 
-We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature.
+We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature. Using StyleGAN, we combined the latent vectors ($w$) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
 
-<img src="https://hackmd.io/_uploads/Bkj13sMakg.png" alt="StyleGAN diagram" width="400">
-
-Using StyleGAN, we combined the latent vectors ($w$) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
-
-<img src="https://hackmd.io/_uploads/H15YhghTJe.jpg" alt="Latent vector mixing" width="400">
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+  <img src="https://hackmd.io/_uploads/Bkj13sMakg.png" alt="StyleGAN diagram" width="400">
+  <img src="https://hackmd.io/_uploads/H15YhghTJe.jpg" alt="Latent vector mixing" width="400">
+</div>
 
 To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**, which proved more effective than perceptual loss for this kind of data.
 
