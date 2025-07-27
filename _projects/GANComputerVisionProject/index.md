@@ -100,7 +100,7 @@ We then used **StyleGAN**, a powerful GAN architecture that generates images pro
   
   
 </div>
-
+<br>
 
 To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**. This allowed us to embed and manipulate real handwriting styles for synthetic generation.
 
@@ -112,6 +112,7 @@ We successfully trained a StyleGAN to generate handwriting that mimics a learned
   <img src="/_projects/GANComputerVisionProject/GANGeneration.gif" alt="Training Example" width="400">
   <figcaption>Figure 3: GAN Handwriting Style Generation</figcaption>
 </figure>
+<br>
 
 
    
