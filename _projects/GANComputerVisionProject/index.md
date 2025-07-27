@@ -9,12 +9,12 @@ main-image: /image.png
 ---
 
 <a href="https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx">
-  <img src="_projects/GANComputerVisionProject/reporticon.png" alt="PDF" width="16" style="vertical-align: middle; margin-right: 4px;">
+  <img src="/reporticon.png" alt="PDF" width="16" style="vertical-align: middle; margin-right: 4px;">
   Project Report
 </a>
 &nbsp;&nbsp;
 <a href="(https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB)">
-  <img src="_projects/GANComputerVisionProject/code_icon-icons.webp" alt="Code" width="16" style="vertical-align: middle; margin-right: 4px;">
+  <img src="/code_icon-icons.webp" alt="Code" width="16" style="vertical-align: middle; margin-right: 4px;">
   Project Code
 </a>
 
