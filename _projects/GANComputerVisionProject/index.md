@@ -5,7 +5,7 @@ description: Short description of the project
 skills:
   - Skill 1
   - Skill 2
-main-image: /_projects/GANComputerVisionProject/image.png
+main-image: _projects/GANComputerVisionProject/image.png
 ---
 Recreating Handwriting using Generative Adverserial Networks
 ===
