@@ -12,7 +12,7 @@ main-image: /PointPainting.jpg
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
 
-  <a href="/AMP_Final_Assignment.pdf" target="_blank" style="
+  <a href="_projects/CenterpointProject/AMP_Final_Assignment.pdf" target="_blank" style="
     background-color: #007bff;
     color: black;
     padding: 8px 16px;
