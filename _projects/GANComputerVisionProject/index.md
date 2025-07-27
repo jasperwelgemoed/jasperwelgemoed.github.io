@@ -34,7 +34,7 @@ main-image: /image.png
 
   <a href="https://colab.research.google.com/drive/162i1A9PvQPk1pWAMXpI4sF0svXwUVVTT?usp=sharing" target="_blank" style="
     background-color: #20c997;
-    color: white;
+    color: black;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
@@ -45,7 +45,7 @@ main-image: /image.png
 
   <a href="https://colab.research.google.com/drive/15fV1xdnsQa_IY56wmCsjLJg7CLByYHdi#scrollTo=Gq6eUDbDqNwp" target="_blank" style="
     background-color: #20c997;
-    color: white;
+    color: black;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
@@ -56,7 +56,7 @@ main-image: /image.png
 
   <a href="https://colab.research.google.com/drive/17nQXRduWsscCrEuTa0UI-Qaxis3ZdfsGB?usp=sharing" target="_blank" style="
     background-color: #20c997;
-    color: white;
+    color: black;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
@@ -71,11 +71,11 @@ main-image: /image.png
 
 ## Aim of the project
 
-For this project me and my teammates aimed to explore whether Generative Adversarial Networks can be used to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to test personal style replication. 
+For this project, my teammates and I aimed to explore implementations of Computer Vision to assist people with any handwriting disabilities/illnesses in expressing themselves through one of the main forms of communication and identity in life: their (lost) handwriting. Some of these people have lost the ability to write at a later age. Which is why we mainly aimed to be able to train a machine learning network on their old existing handwriting such that they can use our model such that they can continue writing using their old handwriting style.
 
 ## Method
 
-Our project explored two approaches to generating personalized handwriting using GANs.
+We used the working-principle of Generative Adversarial Networks to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to see if we could replicate our own handwriting.
 
 ### 1. One-Hot Conditioned GAN
 
