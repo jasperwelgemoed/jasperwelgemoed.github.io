@@ -18,9 +18,6 @@ main-image: /image.png
   Project Code
 </a>
 
-[Project Report](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)
-[Project Code](https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB)
-
 ## Aim of the project
 
 For this project me and my teammates aimed to explore whether Generative Adversarial Networks can be used to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to test personal style replication. 
