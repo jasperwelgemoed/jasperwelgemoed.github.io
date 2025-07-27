@@ -29,7 +29,7 @@ main-image: /image.png
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;">
-    </> Data Extraction Code
+    💻 Data Extraction Code
   </a>
 
   <a href="https://colab.research.google.com/drive/162i1A9PvQPk1pWAMXpI4sF0svXwUVVTT?usp=sharing" target="_blank" style="
@@ -40,7 +40,7 @@ main-image: /image.png
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;">
-    </> Char One-hot Training
+    💻 Char One-hot Training
   </a>
 
   <a href="https://colab.research.google.com/drive/15fV1xdnsQa_IY56wmCsjLJg7CLByYHdi#scrollTo=Gq6eUDbDqNwp" target="_blank" style="
@@ -51,7 +51,7 @@ main-image: /image.png
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;">
-    </> Char+Style One-hot Training
+    💻 Char+Style One-hot Training
   </a>
 
   <a href="https://colab.research.google.com/drive/17nQXRduWsscCrEuTa0UI-Qaxis3ZdfsGB?usp=sharing" target="_blank" style="
@@ -62,17 +62,16 @@ main-image: /image.png
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;">
-    </> StyleGAN + Extraction
+    💻 StyleGAN + Extraction
   </a>
 
 </div>
 
+---
 
 ## Aim of the project
 
 For this project me and my teammates aimed to explore whether Generative Adversarial Networks can be used to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to test personal style replication. 
-
----
 
 ## Method
 
