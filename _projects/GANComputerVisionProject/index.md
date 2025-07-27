@@ -114,4 +114,4 @@ We successfully trained a StyleGAN to generate handwriting that mimics a learned
 </figure>
 
 
-
+   
