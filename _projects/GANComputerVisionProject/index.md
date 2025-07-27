@@ -3,9 +3,9 @@ layout: post
 title: Recreating Handwriting using Generative Adverserial Networks
 description: Short description of the project
 skills:
-  - Skill 1
-  - Skill 2
-main-image: _projects/GANComputerVisionProject/image.png
+  - AI
+  - Computer Vision
+main-image: /image.png
 ---
 Recreating Handwriting using Generative Adverserial Networks
 ===
