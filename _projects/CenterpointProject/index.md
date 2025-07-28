@@ -24,7 +24,7 @@ main-image: /PointPainting.jpg
   </a>
 
   <a href="assets/AMP_Group15_Code_Submission.zip" download style="
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     padding: 8px 16px;
     border-radius: 6px;
