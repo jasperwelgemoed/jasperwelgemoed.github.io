@@ -1141,13 +1141,14 @@ footer p {
   width: 100%;
   background: #eefaf9;
   padding: 2rem 0;
+  position: relative;
 }
 
 .scroll-track {
   display: flex;
-  width: fit-content;
-  animation: scroll 40s linear infinite;
   gap: 1rem;
+  width: max-content;
+  animation: scroll-left linear infinite;
 }
 
 .scroll-track img {
@@ -1158,11 +1159,7 @@ footer p {
   flex-shrink: 0;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
