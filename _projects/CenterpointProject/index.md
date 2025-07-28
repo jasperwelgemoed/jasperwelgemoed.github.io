@@ -125,7 +125,7 @@ We performed training, validation and testing on these techniques separately and
 For the best performing model (PointPainting + Data Augementation, we saw a significant increase in the pedestrian and cyclist class, but also a significant drop in the Car mAP. So we decided to add gated fusion plus a dropout during training as here the performance drop on the car was minimal. This turned out to work great and yielded the following results. <br> <br>
 The best-performing configuration was:  
 **PointPainting + Data Augmentation + Gated Fusion**,  
-which achieved an **overall mAP of 81.90%** which is a performance increase of **15.12%** compared to the baseline model.<br>
+which achieved an **overall mAP of 81.90%** which is a **performance increase of 15.12%** compared to the baseline model.<br>
 
 | Class       | mAP (%) |
 |-------------|---------|
