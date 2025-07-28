@@ -6,7 +6,7 @@ skills:
 - Project Management
 - CAD (Solidworks)
 - ROS
-main-image: /_projects/BachelorProject/MMDesignB.png
+main-image: /MMDesignB.png
 ---
 /assets/Robotics_Bachelor_Thesis_BEP_Group_9.pdf
 
