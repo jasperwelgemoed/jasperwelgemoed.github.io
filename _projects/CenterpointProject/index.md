@@ -125,7 +125,8 @@ After analysing the existing code base, we concluded that the network was perfor
 
 The best-performing configuration was:  
 **PointPainting + Data Augmentation + Gated Fusion**,  
-which achieved an **overall mAP of 81.9%**, with particularly strong results for:
+which achieved an **overall mAP of 81.9%**, with particularly strong results for:<br>
+
 | Class       | mAP (%) |
 |-------------|---------|
 | Cars        | 90.17   |
