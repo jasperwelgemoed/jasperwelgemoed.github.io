@@ -60,31 +60,35 @@ This phased methodology ensures a well-documented, collaborative, and test-drive
 
   
 ## Key Result
-We performed training, validation and testing on these techniques separately and later combined multiple of the adjustments into one model to see if they together yield better performance. After performing training, validation and testing on these different combined models, we yielded the following results. 
-### **3D Object Detection mAP Comparison**
+## ✅ Summary of Results
 
-| Method                                        | Car mAP (%) | Pedestrian mAP (%) | Cyclist mAP (%) | Overall mAP (%) |
-|----------------------------------------------|-------------|---------------------|------------------|------------------|
-| Baseline (Standard FPN)                      | 89.65       | 58.38               | 52.32            | 66.78            |
-| ResNet                                       | 70.00       | 54.00               | 73.00            | 66.00            |
-| Single-Level Gated Fusion                    | 66.23       | 54.98               | 81.76            | 67.66            |
-| Multi-Scale Gated Fusion (BiFPN-like)        | 68.91       | 50.52               | 76.89            | 65.44            |
-| Gated Fusion + Dropout (0.2)                 | 80.32       | 44.61               | 76.47            | 67.13            |
-| PointPainting (only)                         | 70.65       | 66.88               | 85.59            | 74.37            |
-| PointPainting + Data Augmentation            | 70.47       | 72.52               | 85.55            | **76.18**        |
-| Tuned CenterPoint Head                       | 72.47       | 46.05               | 71.94            | 63.68            |
+- **Repeatability**  
+  - Achieved **99.5%** success rate with 100g tools  
+  - Achieved **97.8%** success rate with 300g tools  
+  - Significant improvement over last year’s system (**83.1%** repeatability)
 
-For the best performing model (PointPainting + Data Augementation, we saw a significant increase in the pedestrian and cyclist class, but also a significant drop in the Car mAP. So we decided to add gated fusion plus a dropout during training as here the performance drop on the car was minimal. This turned out to work great and yielded the following results. <br> <br>
-The best-performing configuration was:  
-**PointPainting + Data Augmentation + Gated Fusion**,  
-which achieved an **overall mAP of 81.90%** which is a **performance increase of 15.12%** compared to the baseline model.<br>
+- **Cycle Time**  
+  - Reduced tool-switching time to **9.8 seconds**  
+  - Meets the target to be faster than a human (previous time was 20 seconds)
 
-| Class       | mAP (%) |
-|-------------|---------|
-| Cars        | 90.17   |
-| Pedestrians | 73.95   |
-| Cyclists    | 81.59   |
-| **Overall** | **81.90** |
+- **Mass Optimization**  
+  - Total system mass reduced by **46%** (from 74g to 40g)  
+  - Allows for heavier tools (up to 300g)
 
+- **Precision and Accuracy**  
+  - Tests informed design tolerances for successful docking  
+  - Adjusted tolerances ensure successful tool switching in **>99%** of cases
+
+- **Environmental Resistance**  
+  - Improved **moisture** and **dirt** protection (covered electronics, anti-dirt features)  
+  - Greenhouse testing still needed for full validation
+
+- **Cost Efficiency**  
+  - Total cost of the system: **€50**  
+  - Well below the €150 budget limit
+
+- **Compatibility & Scalability**  
+  - Fully compatible with the **Mirte Master** platform  
+  - Easily **scalable and maintainable** for future use and different greenhouse setups
 
 ---
