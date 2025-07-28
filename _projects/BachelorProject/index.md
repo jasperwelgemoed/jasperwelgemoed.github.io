@@ -8,7 +8,6 @@ skills:
 - ROS
 main-image: /MMDesignB.png
 ---
-/assets/Robotics_Bachelor_Thesis_BEP_Group_9.pdf
 
 ## Project Documentation
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
