@@ -84,9 +84,9 @@ After analysing the existing code base, we concluded that the network was perfor
 ### 4. Neck
 **Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features. <br>
 **Experiment 1: Gated MultiViewFusion** <br>
-  - Combined voxel-level detail and high-level BEV context using a **learned gating mechanism**. <br>
+Combined voxel-level detail and high-level BEV context using a **learned gating mechanism**. <br>
 **Experiment 2: Multi-Scale Gated Fusion (BiFPN-like)** <br>
-  - Integrated bidirectional flow across scales but didn’t outperform simpler fusion. <br>
+Integrated bidirectional flow across scales but didn’t outperform simpler fusion. <br>
 **Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting <br>
 
 ### 5. Head
