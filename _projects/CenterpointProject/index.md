@@ -97,6 +97,15 @@ After analysing the existing code base, we concluded that the network was perfor
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   
 
+
+  <figure>
+  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Latent vector mixing" width="400">
+  <figcaption>Figure 2: Style generation</figcaption>
+  </figure>
+  
+  
+</div>
+
 ### **3D Object Detection mAP Comparison**
 
 | Method                                        | Car mAP (%) | Pedestrian mAP (%) | Cyclist mAP (%) | Overall mAP (%) |
@@ -111,15 +120,9 @@ After analysing the existing code base, we concluded that the network was perfor
 | Tuned CenterPoint Head                       | 72.47       | 46.05               | 71.94            | 63.68            |
 
   
-  <figure>
-  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Latent vector mixing" width="400">
-  <figcaption>Figure 2: Style generation</figcaption>
-  </figure>
-  
-  
-</div>
 
 ## Key Result
+
 The best-performing configuration was:  
 **PointPainting + Data Augmentation + Gated Fusion**,  
 which achieved an **overall mAP of 81.9%**, with particularly strong results for:
@@ -129,4 +132,6 @@ which achieved an **overall mAP of 81.9%**, with particularly strong results for
 | Pedestrians | 73.95   |
 | Cyclists    | 81.59   |
 | **Overall** | **81.90** |
+
+
 
