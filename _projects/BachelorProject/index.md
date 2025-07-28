@@ -89,11 +89,7 @@ This phased methodology ensures a well-documented, collaborative, and test-drive
 - **Compatibility & Scalability**  
   - Fully compatible with the **Mirte Master** platform  
   - Easily **scalable and maintainable** for future use and different greenhouse setups
- 
-<figure>
-  <img src="/_projects/GANComputerVisionProject/GANGeneration.gif" alt="Style Generation" width="400">
-  <figcaption>Figure 3: GAN Handwriting Style Generation</figcaption>
-</figure>
+{% include youtube-video.html id="VbBkotTUgpI" autoplay= "false"%}
 <br>
 
 
