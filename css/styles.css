@@ -1135,3 +1135,34 @@ footer p {
     transform: translateY(4px);
   }
 }
+
+.scroll-gallery {
+  overflow: hidden;
+  width: 100%;
+  background: #eefaf9;
+  padding: 2rem 0;
+}
+
+.scroll-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+  gap: 1rem;
+}
+
+.scroll-track img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
