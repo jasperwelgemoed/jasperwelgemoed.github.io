@@ -28,46 +28,25 @@ main-image: /MMDesignB.png
 ---
 
 ## Aim of the project
-The project focused on enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints set by the DelftBlue Supercomputer of the TU Delft. Specifically, we aimed to improve the mean average precision of the baseline performance for this network. 
-
-### **Baseline Performance**
-
-| Class       | mAP (%) |
-|-------------|---------|
-| Cars        | 89.65   |
-| Pedestrians | 58.38   |
-| Cyclists    | 52.32   |
-| **Overall** | **66.78** |
+The aim of this project is to develop a small-scale, low-budget agricultural tool-switching mechanism compatible with the Mirte Master robot, specifically optimized for greenhouse conditions. The goal is to enable the robot to switch between different tools autonomously, addressing challenges such as precision limitations, moisture and dirt resistance, and cost-efficiency, ultimately improving the robot’s functionality for owners of smaller greenhouses.
 
 
 ## Method
-After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. So we decided to make the following adjustments to the existing base code:
+The methodology of this project follows a structured NASA systems engineering and project management approach, broken down into seven distinct phases, each with specific objectives and deliverables to ensure systematic progress and integration. These phases include:
 
-### 1. Sensor Fusion
-**Technique:** Early fusion via PointPainting each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone). <br>
-**Goal:** Improve classification and localization, especially for small or occluded objects. <br>
-**Projection:** LiDAR points are projected into the image plane and assigned class probabilities. <br>
-**Rejected Alternative:** BEVFusion was considered but not used due to high computational cost. <br>
+Pre-Phase A – Mission Study: Identifying stakeholders, refining the project scope, and formulating a clear mission need statement.
 
-### 2. Data Augmentation
-**Image augmentations:** 50% of images were randomly flipped, color jittered, or converted to grayscale. LiDAR and ground truth were mirrored accordingly. <br>
-**LiDAR augmentations:** Applied on the 7D fused representation using random rotation, scaling, and translation to introduce spatial diversity. <br>
+Phase A – Concept Development: Analyzing the previous design, defining system-level requirements, and generating multiple design concepts.
 
-### 3. Backbone
-**Change:** Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting small objects (e.g., cyclists, pedestrians). <br>
-**Rationale:** Residual connections in ResNet mitigate vanishing gradients and preserve spatial detail. <br>
+Phase B – Preliminary Design: Selecting the most promising concept through trade-offs and testing early prototypes using 3D printing.
 
-### 4. Neck
-**Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features. <br>
-**Experiment 1: Gated MultiViewFusion** <br>
-Combined voxel-level detail and high-level BEV context using a **learned gating mechanism**. <br>
-**Experiment 2: Multi-Scale Gated Fusion (BiFPN-like)** <br>
-Integrated bidirectional flow across scales but didn’t outperform simpler fusion. <br>
-**Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting <br>
+Phase C – Detailed Design: Finalizing the design for manufacturing, including CAD models and connection definitions.
 
-### 5. Head
-**Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits. <br>
-**Tuning the CenterPoint head** alone yielded subpar performance. <br>
+Phase D/E – Production, Testing, and Final Iteration: Manufacturing the system, conducting integration with the parallel group, and performing functional and performance tests.
+
+Phase F – Verification and Documentation: Verifying requirement compliance and compiling the final report.
+
+This phased methodology ensures a well-documented, collaborative, and test-driven development process for creating a functional tool-switching mechanism.
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
