@@ -33,6 +33,17 @@ main-image: /PointPainting.jpg
     font-family: sans-serif;">
     ⬇️ Download Project ZIP
   </a>
+    <a href="/assets/AMP_Group15_Wandb_logs_Final_Detection_Pipeline_PoitPainting_DataAugmentation" download style="
+    background-color: #20c997;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    ⬇️ Download Project ZIP
+  </a>
+
 
 
 </div>
