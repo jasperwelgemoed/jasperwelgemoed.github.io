@@ -34,17 +34,15 @@ The aim of this project is to develop a small-scale, low-budget agricultural too
 ## Method
 The methodology of this project follows a structured NASA systems engineering and project management approach, broken down into seven distinct phases, each with specific objectives and deliverables to ensure systematic progress and integration. These phases include:
 
-Pre-Phase A – Mission Study: Identifying stakeholders, refining the project scope, and formulating a clear mission need statement.
+| **Phase**                                         | **Description**                                                                                   |
+|--------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Pre-Phase A – Mission Study**                  | Identifying stakeholders, refining the project scope, and formulating a clear mission need statement. |
+| **Phase A – Concept Development**                | Analyzing the previous design, defining system-level requirements, and generating multiple design concepts. |
+| **Phase B – Preliminary Design**                 | Selecting the most promising concept through trade-offs and testing early prototypes using 3D printing. |
+| **Phase C – Detailed Design**                    | Finalizing the design for manufacturing, including CAD models and connection definitions.         |
+| **Phase D/E – Production, Testing, and Final Iteration** | Manufacturing the system, conducting integration with the parallel group, and performing functional and performance tests. |
+| **Phase F – Verification and Documentation**     | Verifying requirement compliance and compiling the final report.                                  |
 
-Phase A – Concept Development: Analyzing the previous design, defining system-level requirements, and generating multiple design concepts.
-
-Phase B – Preliminary Design: Selecting the most promising concept through trade-offs and testing early prototypes using 3D printing.
-
-Phase C – Detailed Design: Finalizing the design for manufacturing, including CAD models and connection definitions.
-
-Phase D/E – Production, Testing, and Final Iteration: Manufacturing the system, conducting integration with the parallel group, and performing functional and performance tests.
-
-Phase F – Verification and Documentation: Verifying requirement compliance and compiling the final report.
 
 This phased methodology ensures a well-documented, collaborative, and test-driven development process for creating a functional tool-switching mechanism.
 
