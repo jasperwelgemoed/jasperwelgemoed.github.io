@@ -98,8 +98,8 @@ After analysing the existing code base, we concluded that the network was perfor
 
 
   <figure>
-  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Latent vector mixing" width="400">
-  <figcaption>Figure 2: Style generation</figcaption>
+  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Network Pipeline Overview" width="700">
+  <figcaption>Figure 1: Network Pipeline Overview  </figcaption>
   </figure>
   
   
