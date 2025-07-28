@@ -123,8 +123,10 @@ After analysing the existing code base, we concluded that the network was perfor
 The best-performing configuration was:  
 **PointPainting + Data Augmentation + Gated Fusion**,  
 which achieved an **overall mAP of 81.9%**, with particularly strong results for:
-- **Cars:** 90.17%  
-- **Pedestrians:** 73.95%  
-- **Cyclists:** 81.59%
-- **Mean Average Precision:** 81.90%
+| Class       | mAP (%) |
+|-------------|---------|
+| Cars        | 90.17   |
+| Pedestrians | 73.95   |
+| Cyclists    | 81.59   |
+| **Overall** | **81.90** |
 
