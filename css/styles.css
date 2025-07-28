@@ -1086,17 +1086,17 @@ footer p {
 
 .about-slideshow {
   width: 100%;
-  max-width: 600px;
-  margin: 2rem auto 0 auto;
+  max-width: 1000px;
+  margin: 2rem auto;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-slideshow .slide-track {
   display: flex;
-  width: calc(120px * 14 + 10px * 13); /* 14 images, 13 gaps */
-  animation: slide 30s linear infinite;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
   gap: 10px;
 }
 
@@ -1107,22 +1107,6 @@ footer p {
   border-radius: 8px;
   flex-shrink: 0;
 }
-.about-slideshow .slide-track::after {
-  content: '';
-  display: flex;
-  gap: 10px;
-}
-
-.about-slideshow .slide-track::after {
-  content: '';
-  display: flex;
-}
-
-.about-slideshow .slide-track::after {
-  content: attr(data-content);
-}
-
-
 
 /* Animation */
 @keyframes slide {
