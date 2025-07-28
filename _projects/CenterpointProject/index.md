@@ -41,7 +41,7 @@ main-image: /PointPainting.jpg
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;">
-    ⬇️ Download Project ZIP
+    ⬇️ Download Weights & Biases ZIP
   </a>
 
 
