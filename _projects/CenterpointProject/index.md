@@ -64,7 +64,7 @@ The project focused on enhancing the **CenterPoint 3D object detector** code bas
 
 
 ## Method
-After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. SO we decided to make the following adjustments to the existing base code:
+After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. So we decided to make the following adjustments to the existing base code:
 
 ### 1. Sensor Fusion
 - **Technique:** Early fusion via **PointPainting**: each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone).
@@ -92,8 +92,6 @@ After analysing the existing code base, we concluded that the network was perfor
 - **Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits.
 - **Tuning the CenterPoint head** alone yielded subpar performance.
 
-
-
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   
 
@@ -106,6 +104,10 @@ After analysing the existing code base, we concluded that the network was perfor
   
 </div>
 
+
+  
+## Key Result
+We performed training, validation and testing on these techniques separately and later combined multiple of the adjustments into one model to see if they together yield better performance. After performing training, validation and testing on these different combined models, we yielded the following results. 
 ### **3D Object Detection mAP Comparison**
 
 | Method                                        | Car mAP (%) | Pedestrian mAP (%) | Cyclist mAP (%) | Overall mAP (%) |
@@ -119,13 +121,10 @@ After analysing the existing code base, we concluded that the network was perfor
 | PointPainting + Data Augmentation            | 70.47       | 72.52               | 85.55            | **76.18**        |
 | Tuned CenterPoint Head                       | 72.47       | 46.05               | 71.94            | 63.68            |
 
-  
-
-## Key Result
-
+For the best performing model (PointPainting + Data Augementation, we saw a significant increase in the pedestrian and cyclist class, but also a significant drop in the Car mAP. So we decided to add gated fusion plus a dropout during training as here the performance drop on the car was minimal. This turned out to work great and yielded the following results.
 The best-performing configuration was:  
 **PointPainting + Data Augmentation + Gated Fusion**,  
-which achieved an **overall mAP of 81.9%**, with particularly strong results for:<br>
+which achieved an **overall mAP of 81.90%** which is a performance increase of **15.12%** compared to the baseline model.<br>
 
 | Class       | mAP (%) |
 |-------------|---------|
