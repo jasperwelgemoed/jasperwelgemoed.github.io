@@ -1095,9 +1095,26 @@ footer p {
 
 .about-slideshow .slide-track {
   display: flex;
-  animation: slide 10s linear infinite;
+  animation: slide 30s linear infinite;
   gap: 10px;
   width: max-content;
+  position: relative;
+}
+
+.about-slideshow .slide-track::after {
+  content: '';
+  display: flex;
+  gap: 10px;
+}
+
+.about-slideshow .slide-track::after {
+  content: '';
+  display: flex;
+}
+
+.about-slideshow .slide-track::after {
+  content: attr(data-content);
+}
 
 }
 
