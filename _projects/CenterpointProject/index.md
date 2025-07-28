@@ -97,10 +97,19 @@ After analysing the existing code base, we concluded that the network was perfor
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   
 
-  <figure>
-  <img src="/_projects/CenterpointProject/AMPResults.png" alt="StyleGAN diagram" width="400">
-  <figcaption>Figure 1: Model Pipeline Overview</figcaption>
-  </figure>
+### **3D Object Detection mAP Comparison**
+
+| Method                                        | Car mAP (%) | Pedestrian mAP (%) | Cyclist mAP (%) | Overall mAP (%) |
+|----------------------------------------------|-------------|---------------------|------------------|------------------|
+| Baseline (Standard FPN)                      | 89.65       | 58.38               | 52.32            | 66.78            |
+| ResNet                                       | 70.00       | 54.00               | 73.00            | 66.00            |
+| Single-Level Gated Fusion                    | 66.23       | 54.98               | 81.76            | 67.66            |
+| Multi-Scale Gated Fusion (BiFPN-like)        | 68.91       | 50.52               | 76.89            | 65.44            |
+| Gated Fusion + Dropout (0.2)                 | 80.32       | 44.61               | 76.47            | 67.13            |
+| PointPainting (only)                         | 70.65       | 66.88               | 85.59            | 74.37            |
+| PointPainting + Data Augmentation            | 70.47       | 72.52               | 85.55            | **76.18**        |
+| Tuned CenterPoint Head                       | 72.47       | 46.05               | 71.94            | 63.68            |
+
   
   <figure>
   <img src="/_projects/CenterpointProject/Pipeline.png" alt="Latent vector mixing" width="400">
