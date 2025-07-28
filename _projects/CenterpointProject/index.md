@@ -6,6 +6,7 @@ skills:
 - AI
 - Advanced Machine Perception
 - GitHub
+- DelftBlue Supercomputer
 main-image: /PointPainting.jpg
 ---
 
@@ -51,7 +52,7 @@ main-image: /PointPainting.jpg
 ---
 
 ## Aim of the project
-The project focused on enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints. Specifically, we aimed to improve the mean average precision of the baseline performance for this network. 
+The project focused on enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints set by the DelftBlue Supercomputer of the TU Delft. Specifically, we aimed to improve the mean average precision of the baseline performance for this network. 
 
 ### **Baseline Performance**
 
