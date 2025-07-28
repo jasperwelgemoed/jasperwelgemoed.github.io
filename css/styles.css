@@ -1097,6 +1097,8 @@ footer p {
   display: flex;
   animation: slide 10s linear infinite;
   gap: 10px;
+  width: max-content;
+
 }
 
 .about-slideshow img {
@@ -1136,31 +1138,3 @@ footer p {
   }
 }
 
-/* .scroll-gallery {
-  overflow: hidden;
-  width: 100%;
-  background: #eefaf9;
-  padding: 2rem 0;
-  position: relative;
-}
-
-.scroll-track {
-  display: flex;
-  gap: 1rem;
-  width: max-content;
-  animation: scroll-left linear infinite;
-}
-
-.scroll-track img {
-  width: 250px;
-  height: auto;
-  border-radius: 15px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-@keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
- */
