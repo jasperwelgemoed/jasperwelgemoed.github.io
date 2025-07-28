@@ -46,17 +46,6 @@ The methodology of this project follows a structured NASA systems engineering an
 
 This phased methodology ensures a well-documented, collaborative, and test-driven development process for creating a functional tool-switching mechanism.
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-
-
-  <figure>
-  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Network Pipeline Overview" width="700">
-  <figcaption>Figure 1: Network Pipeline Overview  </figcaption>
-  </figure>
-  
-  
-</div>
-
 
   
 ## Key Result
