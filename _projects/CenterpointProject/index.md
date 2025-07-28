@@ -68,7 +68,7 @@ The project focused on enhancing the **CenterPoint 3D object detector** code bas
 After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. So we decided to make the following adjustments to the existing base code:
 
 ### 1. Sensor Fusion
-**Technique:** Early fusion via **PointPainting**: each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone). <br>
+**Technique:** Early fusion via PointPainting each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone). <br>
 **Goal:** Improve classification and localization, especially for small or occluded objects. <br>
 **Projection:** LiDAR points are projected into the image plane and assigned class probabilities. <br>
 **Rejected Alternative:** BEVFusion was considered but not used due to high computational cost. <br>
