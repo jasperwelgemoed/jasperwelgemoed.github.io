@@ -54,10 +54,10 @@ main-image: /PointPainting.jpg
 The project focused on enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints. Specifically, we aimed to improve the mean average precision of the baseline performance for this network. 
 
 **Baseline Performance**
-- **Cars:** 89.65%  
-- **Pedestrians:** 58.38%  
-- **Cyclists:** 52.32%
-- **Mean Average Precision:** 66.78%
+**Cars:** 89.65%  
+**Pedestrians:** 58.38%  
+**Cyclists:** 52.32%
+**Mean Average Precision:** 66.78%
 
 
 ## Method
