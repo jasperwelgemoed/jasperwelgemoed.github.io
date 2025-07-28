@@ -21,8 +21,11 @@
     
 
 </head>
-<body>
+<body class="{% if page.url == '/' %}home{% endif %}">
+
+  {% if page.url == '/' %}
     <div id="particles-js"></div>
+  {% endif %}
 
     <!-- NAVBAR -->
      {% include navbar.html%}
