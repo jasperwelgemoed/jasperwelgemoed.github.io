@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recreating Handwriting using Generative Adverserial Networks (December 2024)
+title: Recreating Handwriting using Generative Adverserial Networks (2025)
 description: Developed a Computer Vision model using Generative Adversarial Networks (GANs) to recreate personalized handwriting styles, enabling the generation of handwritten text from style inputs using datasets like MNIST, NIST, and custom handwriting samples. 
 skills:
   - AI
