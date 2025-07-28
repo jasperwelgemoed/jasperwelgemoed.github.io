@@ -1112,4 +1112,27 @@ footer p {
   100% { transform: translateX(-50%); }
 }
 
+.scroll-arrows {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+  opacity: 0.6;
+}
+
+.scroll-arrows .arrow {
+  display: block;
+  line-height: 1.2;
+  color: #333;
+  transition: transform 0.2s ease-in-out;
+}
+
+.scroll-arrows a:hover .arrow {
+  transform: scale(1.2);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
 
