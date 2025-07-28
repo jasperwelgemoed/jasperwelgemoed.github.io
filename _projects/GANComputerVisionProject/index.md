@@ -75,34 +75,72 @@ For this project, my teammates and I aimed to explore implementations of Compute
 
 ## Method
 
-We used the working-principle of Generative Adversarial Networks to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to see if we could replicate our own handwriting.
+## Methodology Summary
 
-### 1. One-Hot Conditioned GAN
+The project focused on enhancing the **CenterPoint 3D object detector** for the **View of Delft** dataset using practical improvements tailored to computational constraints. The enhancements were made in four main areas:
 
-We first trained a GAN conditioned on both the character (e.g., 'A', 'B', 'C') and the writer's identity, using one-hot encoded vectors. This setup allowed the model to separate **content** (what to write) from **style** (how it looks), enabling generation of letters in different personal handwriting styles.
+---
 
-### 2. Style Extraction with StyleGAN
+### 1. Sensor Fusion
+- **Technique:** Early fusion via **PointPainting**: each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone).
+- **Goal:** Improve classification and localization, especially for small or occluded objects.
+- **Projection:** LiDAR points are projected into the image plane and assigned class probabilities.
+- **Rejected Alternative:** BEVFusion was considered but not used due to high computational cost.
 
-We then used **StyleGAN**, a powerful GAN architecture that generates images progressively through multiple layers. It leverages a latent style vector to control high- and low-level features such as letter shape, stroke thickness, and curvature. Using StyleGAN, we combined the latent vectors (**W**) of two samples to mix different handwriting styles—e.g., taking the structure from one and stroke style from another.
+---
+
+### 2. Data Augmentation
+- **Image augmentations:** 50% of images were randomly flipped, color jittered, or converted to grayscale. LiDAR and ground truth were mirrored accordingly.
+- **LiDAR augmentations:** Applied on the 7D fused representation using random rotation, scaling, and translation to introduce spatial diversity.
+
+---
+
+### 3. Backbone
+- **Change:** Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting small objects (e.g., cyclists, pedestrians).
+- **Rationale:** Residual connections in ResNet mitigate vanishing gradients and preserve spatial detail.
+
+---
+
+### 4. Neck
+- **Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features.
+- **Experiment 1: Gated MultiViewFusion**
+  - Combined voxel-level detail and high-level BEV context using a **learned gating mechanism**.
+- **Experiment 2: Multi-Scale Gated Fusion (BiFPN-like)**
+  - Integrated bidirectional flow across scales but didn’t outperform simpler fusion.
+- **Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting.
+
+---
+
+### 5. Head
+- **Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits.
+- **Tuning the CenterPoint head** alone yielded subpar performance.
+
+---
+
+## Key Result
+The best-performing configuration was:  
+**PointPainting + Data Augmentation + Gated Fusion**,  
+which achieved an **overall mAP of 81.9%**, with particularly strong results for:
+- **Cars:** 90.17%  
+- **Pedestrians:** 73.95%  
+- **Cyclists:** 81.59%
+
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   
 
   <figure>
-  <img src="https://hackmd.io/_uploads/Bkj13sMakg.png" alt="StyleGAN diagram" width="400">
+  <img src="/_projects/CenterpointProject/AMPResults.png" alt="StyleGAN diagram" width="400">
   <figcaption>Figure 1: Model Pipeline Overview</figcaption>
   </figure>
   
   <figure>
-  <img src="https://hackmd.io/_uploads/H15YhghTJe.jpg" alt="Latent vector mixing" width="400">
+  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Latent vector mixing" width="400">
   <figcaption>Figure 2: Style generation</figcaption>
   </figure>
   
   
 </div>
-<br>
-
-To apply this to real handwriting, we approximated the latent vector of an input image using **MSE loss**. This allowed us to embed and manipulate real handwriting styles for synthetic generation.
 
 ## Results
 
