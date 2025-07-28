@@ -60,11 +60,10 @@ This phased methodology ensures a well-documented, collaborative, and test-drive
 
   
 ## Key Result
-## ✅ Summary of Results
 
 - **Repeatability**  
-  - Achieved **99.5%** success rate with 100g tools  
-  - Achieved **97.8%** success rate with 300g tools  
+  - Achieved **99.5%** success rate (toolswitches) with 100g tools  
+  - Achieved **97.8%** success rate (toolswitches) with 300g tools  
   - Significant improvement over last year’s system (**83.1%** repeatability)
 
 - **Cycle Time**  
@@ -90,5 +89,12 @@ This phased methodology ensures a well-documented, collaborative, and test-drive
 - **Compatibility & Scalability**  
   - Fully compatible with the **Mirte Master** platform  
   - Easily **scalable and maintainable** for future use and different greenhouse setups
+ 
+<figure>
+  <img src="/_projects/GANComputerVisionProject/GANGeneration.gif" alt="Style Generation" width="400">
+  <figcaption>Figure 3: GAN Handwriting Style Generation</figcaption>
+</figure>
+<br>
+
 
 ---
