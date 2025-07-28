@@ -23,7 +23,7 @@ main-image: /PointPainting.jpg
     📄 Project Report
   </a>
 
-  <a href="assets/AMP_Group15_Code_Submission.zip" download style="
+  <a href="/assets/AMP_Group15_Code_Submission.zip" download style="
     background-color: #007bff;
     color: white;
     padding: 8px 16px;
