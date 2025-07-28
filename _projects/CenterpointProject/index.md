@@ -68,30 +68,30 @@ The project focused on enhancing the **CenterPoint 3D object detector** code bas
 After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. So we decided to make the following adjustments to the existing base code:
 
 ### 1. Sensor Fusion
-- **Technique:** Early fusion via **PointPainting**: each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone).
-- **Goal:** Improve classification and localization, especially for small or occluded objects.
-- **Projection:** LiDAR points are projected into the image plane and assigned class probabilities.
-- **Rejected Alternative:** BEVFusion was considered but not used due to high computational cost.
+**Technique:** Early fusion via **PointPainting**: each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone).
+**Goal:** Improve classification and localization, especially for small or occluded objects.
+**Projection:** LiDAR points are projected into the image plane and assigned class probabilities.
+**Rejected Alternative:** BEVFusion was considered but not used due to high computational cost.
 
 ### 2. Data Augmentation
-- **Image augmentations:** 50% of images were randomly flipped, color jittered, or converted to grayscale. LiDAR and ground truth were mirrored accordingly.
-- **LiDAR augmentations:** Applied on the 7D fused representation using random rotation, scaling, and translation to introduce spatial diversity.
+**Image augmentations:** 50% of images were randomly flipped, color jittered, or converted to grayscale. LiDAR and ground truth were mirrored accordingly.
+**LiDAR augmentations:** Applied on the 7D fused representation using random rotation, scaling, and translation to introduce spatial diversity.
 
 ### 3. Backbone
-- **Change:** Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting small objects (e.g., cyclists, pedestrians).
-- **Rationale:** Residual connections in ResNet mitigate vanishing gradients and preserve spatial detail.
+**Change:** Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting small objects (e.g., cyclists, pedestrians).
+**Rationale:** Residual connections in ResNet mitigate vanishing gradients and preserve spatial detail.
 
 ### 4. Neck
-- **Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features.
-- **Experiment 1: Gated MultiViewFusion**
+**Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features.
+**Experiment 1: Gated MultiViewFusion**
   - Combined voxel-level detail and high-level BEV context using a **learned gating mechanism**.
-- **Experiment 2: Multi-Scale Gated Fusion (BiFPN-like)**
+**Experiment 2: Multi-Scale Gated Fusion (BiFPN-like)**
   - Integrated bidirectional flow across scales but didn’t outperform simpler fusion.
-- **Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting
+**Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting
 
 ### 5. Head
-- **Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits.
-- **Tuning the CenterPoint head** alone yielded subpar performance.
+**Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits.
+**Tuning the CenterPoint head** alone yielded subpar performance.
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   
