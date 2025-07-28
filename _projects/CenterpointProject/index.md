@@ -94,7 +94,6 @@ Integrated bidirectional flow across scales but didn’t outperform simpler fusi
 **Tuning the CenterPoint head** alone yielded subpar performance. <br>
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-  
 
 
   <figure>
