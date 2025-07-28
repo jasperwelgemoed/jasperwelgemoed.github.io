@@ -1084,3 +1084,32 @@ footer p {
 }
 
 
+.about-slideshow {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-slideshow .slide-track {
+  display: flex;
+  animation: slide 20s linear infinite;
+  gap: 10px;
+}
+
+.about-slideshow img {
+  height: 120px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Animation */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
