@@ -25,28 +25,17 @@ main-image: /project.webp
     📄 Project Report
   </a>
 
-  <a href="/assets/AMP_Group15_Code_Submission.zip" download style="
+  <a href="https://github.com/jasperwelgemoed/MultidisciplinaryProject" target="_blank" style="
     background-color: #20c997;
     color: black;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    font-family: sans-serif;">
-    ⬇️ Download Project ZIP
+    font-family: sans-serif;
+    display: inline-block;">
+    🔗 View GitHub Repository
   </a>
-    <a href="/assets/AMP_Group15_Wandb_logs_Final_Detection_Pipeline_PoitPainting_DataAugmentation" download style="
-    background-color: #20c997;
-    color: black;
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;">
-    ⬇️ Download Weights & Biases ZIP
-  </a>
-
-
 
 </div>
 
