@@ -25,6 +25,16 @@ main-image: /StratosVFront.png
     📄 Project Report
   </a>
 
+  <a href="/assets/StratosVSymposium.pdf" target="_blank" style="
+    background-color: #007bff;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;">
+    📄 Project Report
+  </a>
 </div>
 
 ---
@@ -42,14 +52,11 @@ Planning of the entire project
 
 ## Method
 
-### Method Summary
-
 To realize the mission of developing a reusable launch vehicle, I set up a structured systems-engineering-driven approach. The planning and development process is based on the **NASA Systems Engineering Handbook**, which divides the project into **seven phases**: from Pre-Phase A (concept studies) to Phase F (closeout).
 
-I ensured the team could do what they were hired for, their own specific engineering task. My task was to be the glue between the different departments
- and engineers to ensure the functional requirements for the project would be validated and verified and that the team kept their eyes on the same end-goal. I ensured this by setting up multiple methods for the team to use.
+My task as chief systems engineer was to ensure the engineers could do what they were hired for, their own specific engineering task. My task was to be the glue between the different departments and engineers to ensure the functional requirements for the project would be validated and verified and that the team kept their eyes on the same end-goal. I ensured this by setting up multiple methods for the team to use.
 
-- **Team Organization**: I setup the team structure using a **matrix management structure**, dividing members into departments and sections with shared responsibilities. This enabled clear communication paths and division of tasks across all subsystems.
+- **Team Organization**: First I setup the team structure using a **matrix management structure**, dividing members into departments and sections with shared responsibilities. This enabled clear communication paths and division of tasks across all subsystems. 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
 
@@ -61,7 +68,7 @@ I ensured the team could do what they were hired for, their own specific enginee
   
 </div>
  
-- **Phased Development**: I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning.
+- **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase. 
   
 - **Requirement-Driven Design**: The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
   
