@@ -8,7 +8,7 @@ skills:
 - ROS2
 - Python
 - C++
-main-image: /project.webp 
+main-image: /MDPFront.png
 ---
 
 ## Project Documentation
