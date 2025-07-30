@@ -25,62 +25,57 @@ main-image: /StratosVFront.png
     📄 Project Report
   </a>
 
-  <a href="https://github.com/jasperwelgemoed/MultidisciplinaryProject" target="_blank" style="
-    background-color: #20c997;
-    color: black;
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    display: inline-block;">
-    🔗 View GitHub Repository
-  </a>
-
 </div>
 
 ---
 
 ## Aim of the project
 
-The aim of the project was to develop an autonomous apple-picking robot to support the UN’s Sustainable Development Goal of Zero Hunger. The robot was designed to assist UNity Orchard—an ecological apple farm facing labor shortages and harsh working conditions—by autonomously navigating the orchard, detecting and picking ripe apples, and communicating its status to the farmer, all while minimizing disruption and ensuring safe operation in a dynamic environment.
+The aim of the Stratos V project is to design, build, test, launch to space, recover, and re-launch a refurbishable, liquid bi-propellant rocket to demonstrate the feasibility of reusable and sustainable launch vehicles in student and amateur rocketry. The 2022/23 team specifically focuses on preliminary and detailed design as well as testing selected subsystems, laying the foundation for future teams to achieve full reusability and break DARE’s internal altitude record of 12.5km.
+
+## Responsibilities
+Documentation Management
+Providing self made systems engineering tools to the engineering
+Setting up meetings
+Quality management
+Planning of the entire project
 
 ## Method
+
 ### Method Summary
 
-The method consisted of designing, implementing, and integrating a ROS 2-based software system for an autonomous apple-picking robot, guided by a structured functional architecture.
+To realize the mission of developing a reusable launch vehicle, I set up a structured systems-engineering-driven approach. The planning and development process is based on the **NASA Systems Engineering Handbook**, which divides the project into **seven phases**: from Pre-Phase A (concept studies) to Phase F (closeout).
 
-A **functional hierarchy** was created with six core parent functions:
+I ensured the team could do what they were hired for, their own specific engineering task. My task was to be the glue between the different departments
+ and engineers to ensure the functional requirements for the project would be validated and verified and that the team kept their eyes on the same end-goal. I ensured this by setting up multiple methods for the team to use.
 
-1. Perceive environment  
-2. Navigate around orchard  
-3. Detect apples  
-4. Manage gripper  
-5. Communicate with farmer  
-6. Manage exceptions  
+- **Team Organization**: I setup the team structure using a **matrix management structure**, dividing members into departments and sections with shared responsibilities. This enabled clear communication paths and division of tasks across all subsystems.
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
-These were decomposed into child functions and visualized using a **SysML block diagram**, an **N² chart**, and a **functional flow diagram** with swimlanes to show node responsibilities.
 
-Each function was implemented via dedicated or shared ROS 2 nodes:
+  <figure>
+  <img src="/_projects/MDP/Teamstructure.png" alt="Team Structure" width="700">
+  <figcaption>Figure 1: Team Structure  </figcaption>
+  </figure>
+  
+  
+</div>
+ 
+- **Phased Development**: I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning.
+  
+- **Requirement-Driven Design**: The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
+  
+- **Functional Decomposition**: The mission is analyzed using a **Functional Flow Diagram (FFD)** and **Functional Breakdown Structure (FBS)**, which identify what the rocket must do from production to recovery. These are used to derive and structure design requirements.
 
-- **SLAM Toolbox** was used to map the environment and localize the robot on a static map.
-- A custom **EmergencyBrakeCheck** node read sonar data to perform emergency braking when dynamic obstacles (e.g. workers, animals) were detected within 20 cm.
-- The **NavPlanner** node used the `nav2` stack with a SMAC lattice planner, restricted to spin-and-forward motion for simpler obstacle avoidance.
-- The **AppleDetection** node used **YOLOv8** (via Ultralytics) and **OpenCV** to detect ripe apples using RGB images from both base and gripper-mounted cameras.
-- The **GripperPlanner** node calculated inverse kinematics-based trajectories for the robotic arm and controlled the gripper’s grasping and placing behavior.
-- A **Tkinter-based GUI** was built in the **FarmerInterface** node, allowing the farmer to issue commands (start, stop, return) and monitor robot status.
-- A **Finite State Machine (FSM)** node coordinated node activation and transitions, managing operational flow and top-level exceptions.
+- **Work Planning Tools**: A set of **Work Flow Diagrams (WFDs)** and **Work Breakdown Structures (WBSs)** were created for each project phase, allowing for top-down planning. This is supplemented by **Gantt charts** that show timelines, task durations, and milestones.
 
-The robot’s operational loop was:
 
-1. Navigate to a detected tree  
-2. Detect apples  
-3. Pick apple  
-4. Navigate to basket  
-5. Place apple  
-6. Update farmer and repeat  
 
-Fallback logic was implemented for failed detections, dropped apples, and low battery scenarios. This modular and hierarchical approach ensured robust autonomous operation in a dynamic orchard environment, aligned with the system’s functional requirements and sustainable agriculture goals.
+- **Knowledge Transfer**: The 2022/23 team focuses on cold flow testing and preliminary subsystem design, ensuring that thorough documentation is produced to allow the next year’s team to continue development seamlessly.
+
+- **Risk and Resource Management**: A **SWOT and organizational risk analysis** was conducted to identify internal and external challenges. Preliminary budgets were drafted and are subject to DARE board approval, while the team actively seeks sponsorships to offset costs.
+
+In summary, the Stratos V method combines professional aerospace engineering principles with educational goals, ensuring technical progress, team growth, and alignment with industry trends in sustainable and reusable spaceflight.
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
