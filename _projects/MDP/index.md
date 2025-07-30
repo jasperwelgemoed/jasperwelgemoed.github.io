@@ -117,14 +117,12 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
   
   
     <figure>
-    <img src="/_projects/MDP/Appledetection.jpg" alt="Functional Flow Diagram MDP" width="700">
-    <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
+    <img src="/_projects/MDP/Appledetection.jpg" alt="Apple Detection" width="400">
+    <figcaption>Figure 1: Apple Detection  </figcaption>
     </figure>
     
     
   </div>
-
-
 
 - **Manipulation:**  
   Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.
@@ -134,24 +132,10 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
 #### Unsuccessful Tests
 
 - **Autonomous Navigation (T3):**  
-  Although effective in simulation, the robot could not perform goal-directed navigation in real-world conditions due to partial `nav2` integration.  
+  Although effective in simulation, the robot could not perform goal-directed navigation in real-world conditions due to incomplete `nav2` integration.  
 
 - **Dynamic Obstacle Avoidance (T10):**  
   While the robot successfully detected nearby obstacles and triggered alerts, it could not replan or resume navigation paths autonomously.  
-
-#### Insights
-
-- The system shows high robustness in **core tasks** like detection, manipulation, and farmer communication.
-- The **FSM-based behavior** enabled seamless control across different operational states.
-- Navigation remains the **primary limitation**, highlighting the need for better hardware-software integration for dynamic movement in real orchards.
-
-#### Overall
-
-- **Passed Tests:** 10 / 12  
-- **Failed Tests:** 2 / 12 (T3, T10)  
-- **Core Requirements Met:** All except F2 (autonomous navigation)
-
-The robot demonstrated strong performance in its core operational domain and is a solid foundation for real-world agricultural applications with targeted improvements in navigation and obstacle avoidance.
 
 ---
 
