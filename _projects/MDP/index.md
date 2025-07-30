@@ -73,7 +73,7 @@ Each function was implemented via dedicated or shared ROS 2 nodes:
 
 The robot’s operational loop was:
 
-1. Navigate to a suspected tree  
+1. Navigate to a detected tree  
 2. Detect apples  
 3. Pick apple  
 4. Navigate to basket  
@@ -101,31 +101,30 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
 
 #### Successful Validations
 
-- **Startup and System Readiness (T1, T11, T12):**  
-  The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.  
-  _Requirements met: F1, F6, F7_
+- **Startup and System Readiness:**  
+  The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.
 
-- **Localization and State Awareness (T2, T7):**  
+  {% include youtube-video.html id="cQ7CS-sukfs" autoplay= "false"%}
+
+- **Localization and State Awareness:**  
   The robot accurately localized itself with <5 cm error using a Monte Carlo particle filter and successfully detected basket positions.  
-  _Requirement met: F1_
 
-- **Camera Perception and Object Detection (T4, T5, T7):**  
+
+- **Camera Perception and Object Detection:**  
   Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.  
-  _Requirement met: F3_
 
-- **Manipulation (T6, T8, T9):**  
+
+- **Manipulation:**  
   Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.  
-  _Requirements met: F4, F5_
+
 
 #### Unsuccessful Tests
 
 - **Autonomous Navigation (T3):**  
   Although effective in simulation, the robot could not perform goal-directed navigation in real-world conditions due to partial `nav2` integration.  
-  _Requirement not met: F2_
 
 - **Dynamic Obstacle Avoidance (T10):**  
   While the robot successfully detected nearby obstacles and triggered alerts, it could not replan or resume navigation paths autonomously.  
-  _Partial functionality; F2 not met_
 
 #### Insights
 
