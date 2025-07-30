@@ -87,7 +87,7 @@ Fallback logic was implemented for failed detections, dropped apples, and low ba
 
   <figure>
   <img src="/_projects/MDP/FFDMDP.png" alt="Functional Flow Diagram MDP" width="700">
-  <figcaption>Figure 1: Network Pipeline Overview  </figcaption>
+  <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
   </figure>
   
   
