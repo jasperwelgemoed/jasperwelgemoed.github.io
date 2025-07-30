@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multidisciplinary Project
-description: Multidisciplinary Software Development Project for an Autonomous Apple Picking Robot
+description: Multidisciplinary software development Project for an autonomous apple picking robot autonomous apple-picking robot capable of navigating an orchard, detecting and classifying ripe apples, picking them without damage, and communicating its status to a farmer with minimal human supervision.
 skills: 
 - Project Management
 - Systems Engineering
