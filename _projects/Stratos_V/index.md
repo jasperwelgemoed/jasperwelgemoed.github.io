@@ -33,7 +33,7 @@ main-image: /StratosVFront.png
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;">
-    📄 Project Report
+    📄 Final Symposium Powerpoint
   </a>
 </div>
 
