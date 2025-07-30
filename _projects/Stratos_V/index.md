@@ -9,5 +9,5 @@ skills:
 - System Integration
 - Rocket Propulsion
 - 
-main-image: /project.webp 
+main-image: /StratosVFront.png
 ---
