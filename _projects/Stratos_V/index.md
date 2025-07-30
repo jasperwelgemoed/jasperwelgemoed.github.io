@@ -61,7 +61,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
 
 
   <figure>
-  <img src="/_projects/MDP/Teamstructure.png" alt="Team Structure" width="700">
+  <img src="/_projects/Stratos_V/Teamstructure.png" alt="Team Structure" width="700">
   <figcaption>Figure 1: Team Structure  </figcaption>
   </figure>
   
