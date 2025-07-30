@@ -95,33 +95,51 @@ Fallback logic was implemented for failed detections, dropped apples, and low ba
 
 
   
-## Key Result
-We performed training, validation and testing on these techniques separately and later combined multiple of the adjustments into one model to see if they together yield better performance. After performing training, validation and testing on these different combined models, we yielded the following results. 
-### **3D Object Detection mAP Comparison**
+### Results Summary
 
-| Method                                        | Car mAP (%) | Pedestrian mAP (%) | Cyclist mAP (%) | Overall mAP (%) |
-|----------------------------------------------|-------------|---------------------|------------------|------------------|
-| Baseline (Standard FPN)                      | 89.65       | 58.38               | 52.32            | 66.78            |
-| ResNet                                       | 70.00       | 54.00               | 73.00            | 66.00            |
-| Single-Level Gated Fusion                    | 66.23       | 54.98               | 81.76            | 67.66            |
-| Multi-Scale Gated Fusion (BiFPN-like)        | 68.91       | 50.52               | 76.89            | 65.44            |
-| Gated Fusion + Dropout (0.2)                 | 80.32       | 44.61               | 76.47            | 67.13            |
-| PointPainting (only)                         | 70.65       | 66.88               | 85.59            | 74.37            |
-| PointPainting + Data Augmentation            | 70.47       | 72.52               | 85.55            | **76.18**        |
-| Tuned CenterPoint Head                       | 72.47       | 46.05               | 71.94            | 63.68            |
+A total of **12 system-level tests (T1–T12)** were conducted to validate the robot’s functionality against the defined requirements. Out of these, **10 tests passed successfully**, demonstrating strong performance in perception, manipulation, and communication. Two tests (T3 and T10) related to navigation did not pass due to incomplete integration of the `nav2` stack with the MIRTE robot.
 
-For the best performing model (PointPainting + Data Augementation, we saw a significant increase in the pedestrian and cyclist class, but also a significant drop in the Car mAP. So we decided to add gated fusion plus a dropout during training as here the performance drop on the car was minimal. This turned out to work great and yielded the following results. <br> <br>
-The best-performing configuration was:  
-**PointPainting + Data Augmentation + Gated Fusion**,  
-which achieved an **overall mAP of 81.90%** which is a **performance increase of 15.12%** compared to the baseline model.<br>
+#### Successful Validations
 
-| Class       | mAP (%) |
-|-------------|---------|
-| Cars        | 90.17   |
-| Pedestrians | 73.95   |
-| Cyclists    | 81.59   |
-| **Overall** | **81.90** |
+- **Startup and System Readiness (T1, T11, T12):**  
+  The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.  
+  _Requirements met: F1, F6, F7_
 
+- **Localization and State Awareness (T2, T7):**  
+  The robot accurately localized itself with <5 cm error using a Monte Carlo particle filter and successfully detected basket positions.  
+  _Requirement met: F1_
+
+- **Camera Perception and Object Detection (T4, T5, T7):**  
+  Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.  
+  _Requirement met: F3_
+
+- **Manipulation (T6, T8, T9):**  
+  Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.  
+  _Requirements met: F4, F5_
+
+#### Unsuccessful Tests
+
+- **Autonomous Navigation (T3):**  
+  Although effective in simulation, the robot could not perform goal-directed navigation in real-world conditions due to partial `nav2` integration.  
+  _Requirement not met: F2_
+
+- **Dynamic Obstacle Avoidance (T10):**  
+  While the robot successfully detected nearby obstacles and triggered alerts, it could not replan or resume navigation paths autonomously.  
+  _Partial functionality; F2 not met_
+
+#### Insights
+
+- The system shows high robustness in **core tasks** like detection, manipulation, and farmer communication.
+- The **FSM-based behavior** enabled seamless control across different operational states.
+- Navigation remains the **primary limitation**, highlighting the need for better hardware-software integration for dynamic movement in real orchards.
+
+#### Overall
+
+- **Passed Tests:** 10 / 12  
+- **Failed Tests:** 2 / 12 (T3, T10)  
+- **Core Requirements Met:** All except F2 (autonomous navigation)
+
+The robot demonstrated strong performance in its core operational domain and is a solid foundation for real-world agricultural applications with targeted improvements in navigation and obstacle avoidance.
 
 ---
 
