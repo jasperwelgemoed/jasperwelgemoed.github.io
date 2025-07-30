@@ -107,7 +107,8 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
   {% include youtube-video.html id="cQ7CS-sukfs" autoplay= "false"%}
 
 - **Localization and State Awareness:**  
-  The robot accurately localized itself with <5 cm error using a Monte Carlo particle filter and successfully detected basket positions.  
+  The robot accurately localized itself with <5 cm error using a Monte Carlo particle filter and successfully detected basket positions.
+  {% include youtube-video.html id="Mrpe3mMtA3s" autoplay= "false"%}
 
 
 - **Camera Perception and Object Detection:**  
@@ -115,7 +116,8 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
 
 
 - **Manipulation:**  
-  Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.  
+  Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.
+  {% include youtube-video.html id="IvshLTwPhNs" autoplay= "false"%}
 
 
 #### Unsuccessful Tests
