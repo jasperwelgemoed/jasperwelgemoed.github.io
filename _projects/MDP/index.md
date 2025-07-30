@@ -95,11 +95,9 @@ Fallback logic was implemented for failed detections, dropped apples, and low ba
 
 
   
-### Results Summary
+## Results Summary
 
 A total of **12 system-level tests (T1–T12)** were conducted to validate the robot’s functionality against the defined requirements. Out of these, **10 tests passed successfully**, demonstrating strong performance in perception, manipulation, and communication. Two tests (T3 and T10) related to navigation did not pass due to incomplete integration of the `nav2` stack with the MIRTE robot.
-
-#### Successful Validations
 
 - **Startup and System Readiness:**  
   The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.
