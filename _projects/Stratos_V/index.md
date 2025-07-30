@@ -14,7 +14,7 @@ main-image: /StratosVFront.png
 ## Project Documentation
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
 
-  <a href="/assets/MDP_Report.pdf" target="_blank" style="
+  <a href="/assets/Stratos_V_Preliminary_Project_Planning_Report.pdf" target="_blank" style="
     background-color: #007bff;
     color: black;
     padding: 8px 16px;
