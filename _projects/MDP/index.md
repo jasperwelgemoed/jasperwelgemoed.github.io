@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multidisciplinary Project
-description:  Software Development Project for 
+description: Multidisciplinary Software Development Project for an Autonomous Apple Picking Robot
 skills: 
 - Project Management
 - Systems Engineering
@@ -42,46 +42,45 @@ main-image: /MDPFront.png
 ---
 
 ## Aim of the project
-The project focused on enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints set by the DelftBlue Supercomputer of the TU Delft. Specifically, we aimed to improve the mean average precision of the baseline performance for this network. 
 
-### **Baseline Performance**
-
-| Class       | mAP (%) |
-|-------------|---------|
-| Cars        | 89.65   |
-| Pedestrians | 58.38   |
-| Cyclists    | 52.32   |
-| **Overall** | **66.78** |
-
+The aim of the project was to develop an autonomous apple-picking robot to support the UN’s Sustainable Development Goal of Zero Hunger. The robot was designed to assist UNity Orchard—an ecological apple farm facing labor shortages and harsh working conditions—by autonomously navigating the orchard, detecting and picking ripe apples, and communicating its status to the farmer, all while minimizing disruption and ensuring safe operation in a dynamic environment.
 
 ## Method
-After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. So we decided to make the following adjustments to the existing base code:
+### Method Summary
 
-### 1. Sensor Fusion
-**Technique:** Early fusion via PointPainting each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone). <br>
-**Goal:** Improve classification and localization, especially for small or occluded objects. <br>
-**Projection:** LiDAR points are projected into the image plane and assigned class probabilities. <br>
-**Rejected Alternative:** BEVFusion was considered but not used due to high computational cost. <br>
+The method consisted of designing, implementing, and integrating a ROS 2-based software system for an autonomous apple-picking robot, guided by a structured functional architecture.
 
-### 2. Data Augmentation
-**Image augmentations:** 50% of images were randomly flipped, color jittered, or converted to grayscale. LiDAR and ground truth were mirrored accordingly. <br>
-**LiDAR augmentations:** Applied on the 7D fused representation using random rotation, scaling, and translation to introduce spatial diversity. <br>
+A **functional hierarchy** was created with six core parent functions:
 
-### 3. Backbone
-**Change:** Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting small objects (e.g., cyclists, pedestrians). <br>
-**Rationale:** Residual connections in ResNet mitigate vanishing gradients and preserve spatial detail. <br>
+1. Perceive environment  
+2. Navigate around orchard  
+3. Detect apples  
+4. Manage gripper  
+5. Communicate with farmer  
+6. Manage exceptions  
 
-### 4. Neck
-**Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features. <br>
-**Experiment 1: Gated MultiViewFusion** <br>
-Combined voxel-level detail and high-level BEV context using a **learned gating mechanism**. <br>
-**Experiment 2: Multi-Scale Gated Fusion (BiFPN-like)** <br>
-Integrated bidirectional flow across scales but didn’t outperform simpler fusion. <br>
-**Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting <br>
+These were decomposed into child functions and visualized using a **SysML block diagram**, an **N² chart**, and a **functional flow diagram** with swimlanes to show node responsibilities.
 
-### 5. Head
-**Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits. <br>
-**Tuning the CenterPoint head** alone yielded subpar performance. <br>
+Each function was implemented via dedicated or shared ROS 2 nodes:
+
+- **SLAM Toolbox** was used to map the environment and localize the robot on a static map.
+- A custom **EmergencyBrakeCheck** node read sonar data to perform emergency braking when dynamic obstacles (e.g. workers, animals) were detected within 20 cm.
+- The **NavPlanner** node used the `nav2` stack with a SMAC lattice planner, restricted to spin-and-forward motion for simpler obstacle avoidance.
+- The **AppleDetection** node used **YOLOv8** (via Ultralytics) and **OpenCV** to detect ripe apples using RGB images from both base and gripper-mounted cameras.
+- The **GripperPlanner** node calculated inverse kinematics-based trajectories for the robotic arm and controlled the gripper’s grasping and placing behavior.
+- A **Tkinter-based GUI** was built in the **FarmerInterface** node, allowing the farmer to issue commands (start, stop, return) and monitor robot status.
+- A **Finite State Machine (FSM)** node coordinated node activation and transitions, managing operational flow and top-level exceptions.
+
+The robot’s operational loop was:
+
+1. Navigate to a suspected tree  
+2. Detect apples  
+3. Pick apple  
+4. Navigate to basket  
+5. Place apple  
+6. Update farmer and repeat  
+
+Fallback logic was implemented for failed detections, dropped apples, and low battery scenarios. This modular and hierarchical approach ensured robust autonomous operation in a dynamic orchard environment, aligned with the system’s functional requirements and sustainable agriculture goals.
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
