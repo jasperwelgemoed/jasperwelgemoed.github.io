@@ -112,7 +112,18 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
 
 
 - **Camera Perception and Object Detection:**  
-  Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.  
+  Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.
+  <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+  
+  
+    <figure>
+    <img src="/_projects/MDP/Appledetection.jpg" alt="Functional Flow Diagram MDP" width="700">
+    <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
+    </figure>
+    
+    
+  </div>
+
 
 
 - **Manipulation:**  
