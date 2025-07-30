@@ -68,7 +68,18 @@ My task as chief systems engineer was to ensure the engineers could do what they
   
 </div>
  
-- **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase. 
+- **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase.
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+
+
+  <figure>
+  <img src="/_projects/Stratos_V/Presentatie.jpg" alt="Team Structure" width="400">
+  <figcaption>Figure 1: Team Structure  </figcaption>
+  </figure>
+  
+  
+</div>
   
 - **Requirement-Driven Design**: The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
   
