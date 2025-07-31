@@ -42,6 +42,13 @@ main-image: /StratosVFront.png
 ## Aim of the project
 
 The aim of the Stratos V project is to design, build, test, launch to space, recover, and re-launch a refurbishable, liquid bi-propellant rocket to demonstrate the feasibility of reusable and sustainable launch vehicles in student and amateur rocketry. The 2022/23 team specifically focuses on preliminary and detailed design as well as testing selected subsystems, laying the foundation for future teams to achieve full reusability and break DARE’s internal altitude record of 12.5km.
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+  <figure>
+  <img src="/_projects/Stratos_V/Mission.png" alt="Valispace" width="400">
+  <figcaption>Figure 1: Mission Overview  </figcaption>
+  </figure>
+</div>
+
 
 ## Responsibilities
 Documentation Management
@@ -59,36 +66,31 @@ My task as chief systems engineer was to ensure the engineers could do what they
 - **Team Organization**: First I setup the team structure using a **matrix management structure**, dividing members into departments and sections with shared responsibilities. This enabled clear communication paths and division of tasks across all subsystems.
 
 - **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase.
+
+- **Requirement-Driven Design**: One of my main responsibilities was to ensure that all design decisions made by the engineers where in line with our mission. With a project this size, we had over 800 requirements. To keep track of the requirement's validation and verification, I yielded a sponsorship from Valispace and setup an online requirement tracking tool tailored to our project. Under my guidance the team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
   
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-
-
   <figure>
   <img src="/_projects/Stratos_V/Teamstructure.png" alt="Team Structure" width="700">
-  <figcaption>Figure 1: Team Structure  </figcaption>
+  <figcaption>Figure 2: Team Structure  </figcaption>
   </figure>
   
   <figure>
-  <img src="/_projects/Stratos_V/Presentatie.jpg" alt="Team Structure" width="400">
-  <figcaption>Figure 1: Team Structure  </figcaption>
+  <img src="/_projects/Stratos_V/Presentatie.jpg" alt="Presenting" width="400">
+  <figcaption>Figure 3: Daily Systems Engineering Meeting   </figcaption>
   </figure>
-
-  <figure>
-  <img src="/_projects/Stratos_V/Valispace.png" alt="Team Structure" width="400">
-  <figcaption>Figure 1: Team Structure  </figcaption>
-  </figure>
-  
-  
-  
-  
 </div>
- 
 
-- **Requirement-Driven Design**: One of my main responsibilities was to ensure that all design decisions made by the engineers where in line with our mission. With a project this size, we had over 800 requirements. To keep track of the requirement's validation and verification, I yielded a sponsorship from Valispace and setup an online requirement tracking tool tailored to our project. The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+  <figure>
+  <img src="/_projects/Stratos_V/Valispace.png" alt="Valispace" width="400">
+  <figcaption>Figure 4: Valispace  </figcaption>
+  </figure>
+</div>
   
 - **Functional Decomposition**: The mission is analyzed using a **Functional Flow Diagram (FFD)** and **Functional Breakdown Structure (FBS)**, which identify what the rocket must do from production to recovery. These are used to derive and structure design requirements.
 
-- **Work Planning Tools**: A set of **Work Flow Diagrams (WFDs)** and **Work Breakdown Structures (WBSs)** were created for each project phase, allowing for top-down planning. This is supplemented by **Gantt charts** that show timelines, task durations, and milestones.
+- **Work Planning Tools**: I setup a Notion page with tutorial videos people could A set of **Work Flow Diagrams (WFDs)** and **Work Breakdown Structures (WBSs)** were created for each project phase, allowing for top-down planning. This is supplemented by **Gantt charts** that show timelines, task durations, and milestones.
 
 
 
