@@ -117,7 +117,7 @@ After one year of fulltime working on this project we managed to design & print 
 
 
   <figure>
-    <img src="/_projects/Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="400">
+    <img src="/_projects/Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="350">
     <figcaption>Figure 8: All Engine Tests</figcaption>
   </figure>
 </div>
