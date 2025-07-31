@@ -8,7 +8,7 @@ skills:
 - 3D Printing
 - Product Design
 - Marketing
-main-image: /JTW08058.jpg
+main-image: /LithophaneFront.png
 ---
 
 ## Aim of the project
