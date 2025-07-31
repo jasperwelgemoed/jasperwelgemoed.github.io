@@ -110,16 +110,17 @@ After one year of fulltime working on this project we managed to print a new eng
 
   <figure>
   <img src="/_projects/Stratos_V/2.jpg" alt="Hot-Fire" width="700">
-  <figcaption>Figure 7: Snippet of documentation generated  </figcaption>
+  <figcaption>Figure 7: Hot-Fire Engine  </figcaption>
   </figure>
   
   
-</div>
 
-<figure>
-  <img src="/_projects/Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="400">
-  <figcaption>Figure 8: All Engine Tests</figcaption>
-</figure>
+
+  <figure>
+    <img src="/_projects/Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="400">
+    <figcaption>Figure 8: All Engine Tests</figcaption>
+  </figure>
+</div>
 
 {% include youtube-video.html id="23WjcluVfgk" autoplay= "false"%}
 
