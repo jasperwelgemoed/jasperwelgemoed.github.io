@@ -1,4 +1,4 @@
-<img width="498" height="529" alt="image" src="https://github.com/user-attachments/assets/1d329905-cb85-4d21-bd5c-0dc8e1f05736" />---
+---
 layout: post
 title: Self-made Lithophane Business (2025-Now)
 description: Setting up of a small business in selling lithophanes in self made lightboxes.
