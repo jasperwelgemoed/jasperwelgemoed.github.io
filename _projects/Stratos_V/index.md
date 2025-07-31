@@ -49,14 +49,6 @@ The aim of the Stratos V project is to design, build, test, launch to space, rec
   </figure>
 </div>
 
-
-## Responsibilities
-Documentation Management
-Providing self made systems engineering tools to the engineering
-Setting up meetings
-Quality management
-Planning of the entire project
-
 ## Method
 
 To realize the mission of developing a reusable launch vehicle, I set up a structured systems-engineering-driven approach. The planning and development process is based on the **NASA Systems Engineering Handbook**, which divides the project into **seven phases**: from Pre-Phase A (concept studies) to Phase F (closeout).
@@ -68,6 +60,8 @@ My task as chief systems engineer was to ensure the engineers could do what they
 - **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase.
 
 - **Requirement-Driven Design**: One of my main responsibilities was to ensure that all design decisions made by the engineers where in line with our mission. With a project this size, we had over 800 requirements. To keep track of the requirement's validation and verification, I yielded a sponsorship from Valispace and setup an online requirement tracking tool tailored to our project. Under my guidance the team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
+
+- **Work Planning Tools**: One of the major challenges for this project for me was to keep track of people's work progress and ensure that it contributed to the mission. To assist me and the engineers with this, I created a centralized database for engineers to update their status on their work progress and a place for them to create workpackages. I setup a Notion page with databases for storing documentation, sources, meeting minutes, CAD files, finances and deadlines. I created tutorial videos for the team to watch to get them up to speed with using the tool. In the same place people could find a set of **Work Flow Diagrams (WFDs)** and **Work Breakdown Structures (WBSs)** that I created together with the engineers for each project phase, allowing for top-down planning. This was supplemented by **Gantt charts** that show timelines, task durations, and milestones. 
   
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   <figure>
@@ -86,71 +80,28 @@ My task as chief systems engineer was to ensure the engineers could do what they
   <img src="/_projects/Stratos_V/Valispace.png" alt="Valispace" width="400">
   <figcaption>Figure 4: Valispace  </figcaption>
   </figure>
+  <figure>
+  <img src="/_projects/Stratos_V/WBS.png" alt="WBS" width="400">
+  <figcaption>Figure 5: Example of work breakdown structure  </figcaption>
+  </figure>
 </div>
-  
-- **Functional Decomposition**: The mission is analyzed using a **Functional Flow Diagram (FFD)** and **Functional Breakdown Structure (FBS)**, which identify what the rocket must do from production to recovery. These are used to derive and structure design requirements.
 
-- **Work Planning Tools**: I setup a Notion page with tutorial videos people could A set of **Work Flow Diagrams (WFDs)** and **Work Breakdown Structures (WBSs)** were created for each project phase, allowing for top-down planning. This is supplemented by **Gantt charts** that show timelines, task durations, and milestones.
+- **Knowledge Transfer**: One of the biggest challenges of previous stratos projects, was that there was too little documentation done througout the project. This meant our team had to re-invent the wheel, which cost us loads of time. My responsibility was to provide a smooth transistion from the 2022/2023 team to the 2023/2024 team through a detailed hand-over. 
 
-
-
-- **Knowledge Transfer**: The 2022/23 team focuses on cold flow testing and preliminary subsystem design, ensuring that thorough documentation is produced to allow the next year’s team to continue development seamlessly.
-
-- **Risk and Resource Management**: A **SWOT and organizational risk analysis** was conducted to identify internal and external challenges. Preliminary budgets were drafted and are subject to DARE board approval, while the team actively seeks sponsorships to offset costs.
-
-In summary, the Stratos V method combines professional aerospace engineering principles with educational goals, ensuring technical progress, team growth, and alignment with industry trends in sustainable and reusable spaceflight.
+- **Risk and Resource Management**: Together with the operations manager I was responsible for the risk and resource management during the project. So for each test-campaign we set up, we had to setup multiple risk mitigation strategies. I made templates for **SWOT and organizational risk analysis** for each department.
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
 
   <figure>
-  <img src="/_projects/MDP/FFDMDP.png" alt="Functional Flow Diagram MDP" width="700">
-  <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
+  <img src="/_projects/Stratos_V/Documentation.png" alt="Documentation" width="700">
+  <figcaption>Figure 1: Snippet of documentation generated  </figcaption>
   </figure>
   
   
 </div>
-
-
   
 ## Results Summary
 
-A total of **12 system-level tests (T1–T12)** were conducted to validate the robot’s functionality against the defined requirements. Out of these, **10 tests passed successfully**, demonstrating strong performance in perception, manipulation, and communication. Two tests (T3 and T10) related to navigation did not pass due to incomplete integration of the `nav2` stack with the MIRTE robot.
-
-- **Startup and System Readiness:**  
-  The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.
-
-  {% include youtube-video.html id="cQ7CS-sukfs" autoplay= "false"%}
-
-- **Localization and State Awareness:**  
-  The robot accurately localized itself with <5 cm error using a Monte Carlo particle filter and successfully detected basket positions.
-  {% include youtube-video.html id="Mrpe3mMtA3s" autoplay= "false"%}
-
-
-- **Camera Perception and Object Detection:**  
-  Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.
-  <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-  
-  
-    <figure>
-    <img src="/_projects/MDP/Appledetection.jpg" alt="Apple Detection" width="400">
-    <figcaption>Figure 1: Apple Detection  </figcaption>
-    </figure>
-    
-    
-  </div>
-
-- **Manipulation:**  
-  Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.
-  {% include youtube-video.html id="IvshLTwPhNs" autoplay= "false"%}
-
-
-#### Unsuccessful Tests
-
-- **Autonomous Navigation (T3):**  
-  Although effective in simulation, the robot could not perform goal-directed navigation in real-world conditions due to incomplete `nav2` integration.  
-
-- **Dynamic Obstacle Avoidance (T10):**  
-  While the robot successfully detected nearby obstacles and triggered alerts, it could not replan or resume navigation paths autonomously.  
 
 ---
