@@ -56,7 +56,10 @@ To realize the mission of developing a reusable launch vehicle, I set up a struc
 
 My task as chief systems engineer was to ensure the engineers could do what they were hired for, their own specific engineering task. My task was to be the glue between the different departments and engineers to ensure the functional requirements for the project would be validated and verified and that the team kept their eyes on the same end-goal. I ensured this by setting up multiple methods for the team to use.
 
-- **Team Organization**: First I setup the team structure using a **matrix management structure**, dividing members into departments and sections with shared responsibilities. This enabled clear communication paths and division of tasks across all subsystems. 
+- **Team Organization**: First I setup the team structure using a **matrix management structure**, dividing members into departments and sections with shared responsibilities. This enabled clear communication paths and division of tasks across all subsystems.
+
+- **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase.
+  
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
 
@@ -65,22 +68,16 @@ My task as chief systems engineer was to ensure the engineers could do what they
   <figcaption>Figure 1: Team Structure  </figcaption>
   </figure>
   
-  
-</div>
- 
-- **Phased Development**: Then I broke up the project into logical phases (Pre-Phase A to F), each with clear goals, decision points, and deliverables. Early phases focus on feasibility, requirements, and design, while later ones cover fabrication, testing, operations, and decommissioning. I setup daily meetings to keep track of the department their progress during each phase.
-
-<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-
-
   <figure>
   <img src="/_projects/Stratos_V/Presentatie.jpg" alt="Team Structure" width="400">
   <figcaption>Figure 1: Team Structure  </figcaption>
   </figure>
   
   
-</div>
   
+</div>
+ 
+
 - **Requirement-Driven Design**: The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
   
 - **Functional Decomposition**: The mission is analyzed using a **Functional Flow Diagram (FFD)** and **Functional Breakdown Structure (FBS)**, which identify what the rocket must do from production to recovery. These are used to derive and structure design requirements.
