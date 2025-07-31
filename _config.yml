@@ -61,6 +61,18 @@ skills:
   - category: Project Management
     tools:
     - Systems Engineering
+  - category: Coding
+    tools:
+    - Python
+    - C++
+    - Arduino IDE
+    - ROS2
+    - GitHub
+
+  - category: Hardware
+    tools:
+    - Mechanical Design
+    - Product Design
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
