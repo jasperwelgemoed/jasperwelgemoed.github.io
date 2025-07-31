@@ -5,7 +5,7 @@ description: "This project investigates the effects of prolonged droughts on wat
 skills: 
 - skill 1
 - skill 2
-main-image: /Andalusia.png
+main-image: /AndalusiaFront.png
 ---
 ## Project Documentation
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
