@@ -94,7 +94,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
 
 
   <figure>
-  <img src="/_projects/Stratos_V/Documentation.png" alt="Documentation" width="700">
+  <img src="/_projects/Stratos_V/Documentation.png" alt="Documentation" width="500">
   <figcaption>Figure 6: Snippet of documentation generated  </figcaption>
   </figure>
   
@@ -103,13 +103,13 @@ My task as chief systems engineer was to ensure the engineers could do what they
   
 ## Results Summary
 
-After one year of fulltime working on this project we managed to print a new engine, test it, create detailed designs for almost every sub-component and tested. 
+After one year of fulltime working on this project we managed to design & print a new rocket engine, test it, create detailed designs for almost every sub-component of the rocket. 
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
 
   <figure>
-  <img src="/_projects/Stratos_V/2.jpg" alt="Hot-Fire" width="700">
+  <img src="/_projects/Stratos_V/2.jpg" alt="Hot-Fire" width="600">
   <figcaption>Figure 7: Hot-Fire Engine  </figcaption>
   </figure>
   
@@ -124,4 +124,8 @@ After one year of fulltime working on this project we managed to print a new eng
 
 {% include youtube-video.html id="23WjcluVfgk" autoplay= "false"%}
 
+## UPDATE
+
+I am happy to see that the hand-over for the new team has worked out great as they have just tested their new version of the rocket.
+{% include youtube-video.html id="QN66_WRvBbM" autoplay= "false"%}
 ---
