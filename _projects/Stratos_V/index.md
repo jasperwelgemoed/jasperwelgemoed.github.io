@@ -81,7 +81,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
   <figcaption>Figure 4: Valispace  </figcaption>
   </figure>
   <figure>
-  <img src="/_projects/Stratos_V/WBS.png" alt="WBS" width="400">
+  <img src="/_projects/Stratos_V/WBS.png" alt="WBS" width="600">
   <figcaption>Figure 5: Example of work breakdown structure  </figcaption>
   </figure>
 </div>
