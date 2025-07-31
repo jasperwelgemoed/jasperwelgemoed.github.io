@@ -95,7 +95,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
 
   <figure>
   <img src="/_projects/Stratos_V/Documentation.png" alt="Documentation" width="700">
-  <figcaption>Figure 1: Snippet of documentation generated  </figcaption>
+  <figcaption>Figure 6: Snippet of documentation generated  </figcaption>
   </figure>
   
   
@@ -110,13 +110,15 @@ After one year of fulltime working on this project we managed to print a new eng
 
   <figure>
   <img src="/_projects/Stratos_V/2.jpg" alt="Hot-Fire" width="700">
-  <figcaption>Figure 1: Snippet of documentation generated  </figcaption>
+  <figcaption>Figure 7: Snippet of documentation generated  </figcaption>
   </figure>
   
   
 </div>
 
-
-{% include youtube-video.html id="IvshLTwPhNs" autoplay= "false"%}
+<figure>
+  <img src="/_projects/Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="400">
+  <figcaption>Figure 8: All Engine Tests</figcaption>
+</figure>
 
 ---
