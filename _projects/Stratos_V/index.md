@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Student Team Delft Aerospace Rocket Engineering (2022)
+title: Full-time Year at Student Team Delft Aerospace Rocket Engineering (2022)
 description: "Performed the role of Chief Systems Engineer at Delft Aerospace Rocket Engineering (DARE) for the new flagship rocket: Stratos V, a fully reusable bi-propellant liquid fuel engine built on a 3D-printed rocket engine to be launched to space in 2027."
 skills: 
 - Project Management
@@ -103,5 +103,20 @@ My task as chief systems engineer was to ensure the engineers could do what they
   
 ## Results Summary
 
+After one year of fulltime working on this project we managed to print a new engine, test it, create detailed designs for almost every sub-component and tested. 
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+
+
+  <figure>
+  <img src="/_projects/Stratos_V/2.jpg" alt="Hot-Fire" width="700">
+  <figcaption>Figure 1: Snippet of documentation generated  </figcaption>
+  </figure>
+  
+  
+</div>
+
+
+{% include youtube-video.html id="IvshLTwPhNs" autoplay= "false"%}
 
 ---
