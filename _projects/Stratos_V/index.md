@@ -72,13 +72,19 @@ My task as chief systems engineer was to ensure the engineers could do what they
   <img src="/_projects/Stratos_V/Presentatie.jpg" alt="Team Structure" width="400">
   <figcaption>Figure 1: Team Structure  </figcaption>
   </figure>
+
+  <figure>
+  <img src="/_projects/Stratos_V/Valispace.png" alt="Team Structure" width="400">
+  <figcaption>Figure 1: Team Structure  </figcaption>
+  </figure>
+  
   
   
   
 </div>
  
 
-- **Requirement-Driven Design**: The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
+- **Requirement-Driven Design**: One of my main responsibilities was to ensure that all design decisions made by the engineers where in line with our mission. With a project this size, we had over 800 requirements. To keep track of the requirement's validation and verification, I yielded a sponsorship from Valispace and setup an online requirement tracking tool tailored to our project. The team defined clear **Mission** and **Stakeholder Requirements** to guide all activities. These include technical goals (e.g., reusability, altitude targets), documentation, safety compliance, budget constraints, and stakeholder communication.
   
 - **Functional Decomposition**: The mission is analyzed using a **Functional Flow Diagram (FFD)** and **Functional Breakdown Structure (FBS)**, which identify what the rocket must do from production to recovery. These are used to derive and structure design requirements.
 
