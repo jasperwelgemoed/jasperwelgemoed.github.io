@@ -15,7 +15,7 @@ main-image: /LithophaneFront.png
 In my free time I like to be creative with modelling and 3D printing. It started of as having no idea what to gift my friends for their birthday and now the friends of my friends want the same gift. So I decided to make a small business out of it. People send me their photo's and I turn them into a 3D printable image called a lithophane using existing software. 
 
 ## Method
-Using solidworks I modelled the products and using my BambuLab Mini A1 3D printer I fabricated them. I'm experimenting with different colors, shapes and qualities to see which product people like the most.  
+Using solidworks I modelled the products and using my BambuLab Mini A1 3D printer I fabricated them. I'm experimenting with different colors, shapes and qualities to see which product people like the most. Also I'm gifting a lot of the products to get feedback from friends and family. 
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
