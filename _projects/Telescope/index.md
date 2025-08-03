@@ -46,7 +46,7 @@ Our mission concept uses a formation of four collector spacecraft and one beam c
 
   <figure>
   <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/3714550f-ae50-4071-9461-186fc283a6f4" />
-  <figcaption>Figure 1: Spacecraft ConfigurationP  </figcaption>
+  <figcaption>Figure 1: Spacecraft Configuration  </figcaption>
   </figure>
   
   
