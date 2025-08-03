@@ -35,6 +35,15 @@ The aim of this project is to **analyze the impact of droughts on the water leve
 - **Temporal Resolution**: Data was collected monthly, totaling 60 data points per reservoir and NDVI value across five years to observe trends and seasonal variation.
 - **Trend Analysis**: Linear regression was used to estimate yearly trends in reservoir surface area and NDVI values, enabling predictions about future water availability and vegetation health.
 
+<div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
+
+  <figure>
+  <img width="971" height="263" alt="image" src="https://github.com/user-attachments/assets/b3b0ce54-746d-4e53-90a6-f6a62fe0c8e5" />
+  <figcaption>Figure 1: Manual Annotation of Water Area 1 Year Time Difference  </figcaption>
+  </figure>  
+
+</div>
+
 ## Results
 
 The analysis revealed a significant negative trend in both water surface area and vegetation health across Andalucia over the past five years:
@@ -50,12 +59,12 @@ I closed of the project by writing an advise to the governor of Andalucia.
 
   <figure>
   <img width="667" height="270" alt="image" src="https://github.com/user-attachments/assets/e4373107-6b70-4618-8ce8-cf5b4d011ce7" />
-  <figcaption>Figure 1: Vegetation Quality Andalucia (darker green is better quality)  </figcaption>
+  <figcaption>Figure 2: Vegetation Quality Andalucia (darker green is better quality)  </figcaption>
   </figure>
   
   <figure>
   <img width="445" height="239" alt="image" src="https://github.com/user-attachments/assets/32732970-0284-4959-b89c-80c295f7de1c" />
-  <figcaption>Figure 2: Water Declination Trend in one Andalucian Water Reserve  </figcaption>
+  <figcaption>Figure 3: Water Declination Trend in one Andalucian Water Reserve  </figcaption>
   </figure>
   
 
