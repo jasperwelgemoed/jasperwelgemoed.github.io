@@ -119,10 +119,20 @@ After one year of fulltime working on this project we managed to design & print 
   </figure>
 </div>
 
-{% include youtube-video.html id="23WjcluVfgk" autoplay= "false"%}
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
 
-## UPDATE
+  <div style="flex: 1; min-width: 300px;">
+    <p><strong>Startup and System Readiness:</strong><br>
+    This video entails the testing of the 3D printed rocket engine that we managed to design all of its sub-components for.</p>
+    {% include youtube-video.html id="23WjcluVfgk" autoplay= "false"%}
+  </div>
 
-I am happy to see that the hand-over for the new team has worked out great as they have just tested their new version of the rocket.
-{% include youtube-video.html id="QN66_WRvBbM" autoplay= "false"%}
+  <div style="flex: 1; min-width: 300px;">
+    <p><strong>UPDATE</strong><br>
+    I am happy to see that the hand-over for the new team has worked out great as they have just tested their new version of the rocket.</p>
+    {% include youtube-video.html id="QN66_WRvBbM" autoplay= "false"%}
+  </div>
+
+</div>
+
 ---
