@@ -112,7 +112,7 @@ A total of **12 system-level tests** were conducted to validate the robot’s fu
 
 </div>
 
-- **Camera Perception and Object Detection** & **Manipulation:**  
+**Camera Perception and Object Detection** & **Manipulation:**  
   Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.  
   Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.
 
@@ -128,14 +128,5 @@ A total of **12 system-level tests** were conducted to validate the robot’s fu
   </div>
 
 </div>
-
-#### Unsuccessful Tests
-
-- **Autonomous Navigation (T3):**  
-  Although effective in simulation, the robot could not perform goal-directed navigation in real-world conditions due to incomplete `nav2` integration.  
-
-- **Dynamic Obstacle Avoidance (T10):**  
-  While the robot successfully detected nearby obstacles and triggered alerts, it could not replan or resume navigation paths autonomously.  
-
 ---
 
