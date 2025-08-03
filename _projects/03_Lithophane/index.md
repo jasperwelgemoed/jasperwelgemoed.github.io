@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Self-made Lithophane Business (2025-Now)
-description: Setting up of a small business in selling lithophanes in self made lightboxes.
+title: Small Self-made Lithophane Business (2025-Now)
+description: Launching a small business focused on creating and selling personalized lithophanes (3D printed photos) in self-made lightboxes. I 3D print customers’ favorite photos, turning them into unique illuminated gifts.
 skills: 
 - CAD (Solidworks)
 - Bambu Lab Studio
@@ -15,11 +15,9 @@ main-image: /LithophaneFront.png
 In my free time I like to be creative with modelling and 3D printing. It started of as having no idea what to gift my friends for their birthday and now the friends of my friends want the same gift. So I decided to make a small business out of it. People send me their photo's and I turn them into a 3D printable image called a lithophane using existing software. 
 
 ## Method
-Using solidworks I modelled the products and using my own 3D printer I fabricated them. 
-
+Using solidworks I modelled the products and using my BambuLab Mini A1 3D printer I fabricated them. I'm experimenting with different colors, shapes and qualities to see which product people like the most.  
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-
 
   <figure>
   <img src="/_projects/03_Lithophane/Lithophane.jpg" alt="Square Lithophane" width="300">
