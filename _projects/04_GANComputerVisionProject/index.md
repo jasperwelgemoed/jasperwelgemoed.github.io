@@ -34,7 +34,7 @@ main-image: /image.png
     💻 Data Extraction Code
   </a>
 
-  <a href="https://colab.research.google.com/drive/162i1A9PvQPk1pWAMXpI4sF0svXwUVVTT?usp=sharing" target="_blank" style="
+  <a href="https://colab.research.google.com/drive/162i1A9PvQPkipWaMXpI4sF0svXwUVVTT?usp=sharing#scrollTo=vnuKfWN0p0dB" target="_blank" style="
     background-color: #20c997;
     color: black;
     padding: 8px 16px;
@@ -45,7 +45,7 @@ main-image: /image.png
     💻 Char One-hot Training
   </a>
 
-  <a href="https://colab.research.google.com/drive/15fV1xdnsQa_IY56wmCsjLJg7CLByYHdi#scrollTo=Gq6eUDbDqNwp" target="_blank" style="
+  <a href="https://colab.research.google.com/drive/15fV1XdnsQa_IY56wmCsjLJg7ClByYHdi#scrollTo=Gq6eUDbOqNwp" target="_blank" style="
     background-color: #20c997;
     color: black;
     padding: 8px 16px;
@@ -56,7 +56,7 @@ main-image: /image.png
     💻 Char+Style One-hot Training
   </a>
 
-  <a href="https://colab.research.google.com/drive/17nQXRduWsscCrEuTa0UI-Qaxis3ZdfsGB?usp=sharing" target="_blank" style="
+  <a href="https://colab.research.google.com/drive/1ZnQXRduWscCrEuTa0UI-Qaxis3ZdfsGB?usp=sharing" target="_blank" style="
     background-color: #20c997;
     color: black;
     padding: 8px 16px;
