@@ -72,10 +72,9 @@ main-image: /image.png
 ---
 ## Aim of the project
 
-For this project, my teammates and I aimed to explore implementations of Computer Vision to assist people with any handwriting disabilities/illnesses in expressing themselves through one of the main forms of communication and identity in life: their (lost) handwriting. Some of these people have lost the ability to write at a later age. Which is why we mainly aimed to be able to train a machine learning network on their old existing handwriting such that they can use our model such that they can continue writing using their old handwriting style.
+For this project, my teammates and I aimed to explore implementations of computer vision to assist people with any handwriting disability/illness in expressing themselves through one of the main forms of communication and identity in life: their (lost) handwriting. Some of these people have lost the ability to write at a later age. Which is why we mainly aimed to be able to train a machine learning network on their old existing handwriting such that they can use our model to continue writing using their old handwriting style.
 
 ## Method
-
 We used the working-principle of Generative Adversarial Networks to recreate and manipulate individual handwriting styles. We developed methods to condition GANs on one-hot encoded identity and character vectors, and trained StyleGANs to extract and reapply handwriting style features. We also created our own dataset of handwritten characters to see if we could replicate our own handwriting.
 
 ### 1. One-Hot Conditioned GAN
@@ -107,7 +106,7 @@ To apply this to real handwriting, we approximated the latent vector of an input
 
 ## Results
 
-We successfully trained a StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST.
+We successfully trained a StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST. 
 
 <figure>
   <img src="/_projects/04_GANComputerVisionProject/GANGeneration.gif" alt="Style Generation" width="400">
