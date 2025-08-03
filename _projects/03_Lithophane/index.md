@@ -59,5 +59,4 @@ I have created 2 lithophane shaped boxes with lights in them, ready to be sold (
 - Create an instagram account for promotion
 - Have fun :)
 <br>
----
 
