@@ -58,4 +58,6 @@ I have created 2 lithophane shaped boxes with lights in them, ready to be sold (
 - Invest in an extra 3D printer to keep up with the demand.
 - Create an instagram account for promotion
 - Have fun :)
+<br>
+---
 
