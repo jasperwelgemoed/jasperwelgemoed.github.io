@@ -91,7 +91,6 @@ Fallback logic was implemented for failed detections, dropped apples, and low ba
   
 </div>
 
-
   
 ## Results Summary
 
@@ -113,23 +112,22 @@ A total of **12 system-level tests** were conducted to validate the robot’s fu
 
 </div>
 
-- **Camera Perception and Object Detection:**  
-  Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.
-  <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
-  
-  
-    <figure>
-    <img src="/_projects/02_MDP/Appledetection.jpg" alt="Apple Detection" width="400">
-    <figcaption>Figure 1: Apple Detection  </figcaption>
-    </figure>
-    
-    
+- **Camera Perception and Object Detection** & **Manipulation:**  
+  Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.  
+  Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+
+  <figure style="flex: 1; min-width: 300px;">
+    <img src="/_projects/02_MDP/Appledetection.jpg" alt="Apple Detection" width="100%">
+    <figcaption>Figure 1: Apple Detection</figcaption>
+  </figure>
+
+  <div style="flex: 1; min-width: 300px;">
+    {% include youtube-video.html id="IvshLTwPhNs" autoplay="false" %}
   </div>
 
-- **Manipulation:**  
-  Apple picking and placement achieved success rates above 85%, with reliable arm retraction behavior.
-  {% include youtube-video.html id="IvshLTwPhNs" autoplay= "false"%}
-
+</div>
 
 #### Unsuccessful Tests
 
