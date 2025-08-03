@@ -25,7 +25,7 @@ Using solidworks I modelled the products and using my BambuLab Mini A1 3D printe
   </figure>
 
   <figure>
-  <img src="/_projects/03_Lithophane/Solidworks.jpg" alt="3D Model of Lithophane Box" width="300">
+  <img src="/_projects/03_Lithophane/Solidworks.jpg" alt="3D Model of Lithophane Box" width="200">
   <figcaption>Figure 2: 3D Model of Lithophane Box  </figcaption>
   </figure>
   
