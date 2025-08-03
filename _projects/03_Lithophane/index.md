@@ -37,7 +37,7 @@ Using solidworks I modelled the products and using my BambuLab Mini A1 3D printe
 </div>
 
 ## Results so far
-I have created 2 lithophane shaped boxes with lights in them, ready to be sold. Currently I have not sold any lithophanes as I am still in the design phase of the lithophanes themself. I only gifted them to my friends and got positive feedback. I also managed to create a colored lithophane.
+I have created 2 lithophane shaped boxes with lights in them, ready to be sold (see below). Currently I have not sold any lithophanes as I am still in the design phase of the lithophanes themself. I only gifted them to my friends and got positive feedback. I also managed to create a colored lithophane (see below)
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
 
@@ -54,7 +54,8 @@ I have created 2 lithophane shaped boxes with lights in them, ready to be sold. 
 </div>
 
 ## Plans
-- Creating a website (webshop) for people to upload their photo's to and order a lithophane.
+- Creating a website with a webshop for people to upload their photo's to and order a lithophane.
 - Invest in an extra 3D printer to keep up with the demand.
-- Create instagram account for promotion
+- Create an instagram account for promotion
+- Have fun :)
 
