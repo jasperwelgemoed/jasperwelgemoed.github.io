@@ -45,11 +45,11 @@ Our mission concept uses a formation of four collector spacecraft and one beam c
 
   <figure>
   <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/555ac1b1-646e-4f87-906d-abbf288ac191" />
-  <figcaption>Figure 2:   </figcaption>
+  <figcaption>Figure 1: Diffraction Limit and Stray Light Filtering  </figcaption>
   </figure>
   <figure>
   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/3714550f-ae50-4071-9461-186fc283a6f4" />
-  <figcaption>Figure 1: Spacecraft Configuration  </figcaption>
+  <figcaption>Figure 2: Spacecraft Configuration  </figcaption>
   </figure>
   
 
