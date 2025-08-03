@@ -97,7 +97,7 @@ Integrated bidirectional flow across scales but didn’t outperform simpler fusi
 
 
   <figure>
-  <img src="/_projects/CenterpointProject/Pipeline.png" alt="Network Pipeline Overview" width="700">
+  <img src="/_projects/01_CenterpointProject/Pipeline.png" alt="Network Pipeline Overview" width="700">
   <figcaption>Figure 1: Network Pipeline Overview  </figcaption>
   </figure>
   
