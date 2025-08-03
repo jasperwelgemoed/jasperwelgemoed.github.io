@@ -86,10 +86,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
   </figure>
 </div>
 
-- **Knowledge Transfer**: One of the biggest challenges of previous stratos projects, was that there was too little documentation done througout the project. This meant our team had to re-invent the wheel, which cost us loads of time. My responsibility was to provide a smooth transistion from the 2022/2023 team to the 2023/2024 team through a detailed hand-over. 
-
-- **Risk and Resource Management**: Together with the operations manager I was responsible for the risk and resource management during the project. So for each test-campaign we set up, we had to setup multiple risk mitigation strategies. I made templates for **SWOT and organizational risk analysis** for each department.
-
+- **Knowledge Transfer**: One of the biggest challenges of previous stratos projects, was that there was too little documentation done througout the project. This meant our team had to re-invent the wheel, which cost us loads of time. My responsibility was to provide a smooth transistion from the 2022/2023 team to the 2023/2024 team through a detailed hand-over.
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
 
@@ -100,7 +97,10 @@ My task as chief systems engineer was to ensure the engineers could do what they
   
   
 </div>
-  
+
+- **Risk and Resource Management**: Together with the operations manager I was responsible for the risk and resource management during the project. So for each test-campaign we set up, we had to setup multiple risk mitigation strategies. I made templates for **SWOT and organizational risk analysis** for each department.
+
+
 ## Results Summary
 
 After one year of fulltime working on this project we managed to design & print a new rocket engine, test it, create detailed designs for almost every sub-component of the rocket. 
@@ -112,12 +112,9 @@ After one year of fulltime working on this project we managed to design & print 
   <img src="/_projects/08_Stratos_V/2.jpg" alt="Hot-Fire" width="600">
   <figcaption>Figure 7: Hot-Fire Engine  </figcaption>
   </figure>
-  
-  
-
 
   <figure>
-    <img src="/_projects/08_Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="350">
+    <img src="/_projects/08_Stratos_V/HotfireChronologically_2_5.gif" alt="Hot-Fires" width="350">
     <figcaption>Figure 8: All Engine Tests</figcaption>
   </figure>
 </div>
