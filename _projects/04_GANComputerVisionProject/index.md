@@ -5,6 +5,8 @@ description: Developed a Computer Vision model using Generative Adversarial Netw
 skills:
   - AI
   - Computer Vision
+  - Deeplearning
+  - Machine Learning
 main-image: /image.png
 ---
 ## Project Documentation
