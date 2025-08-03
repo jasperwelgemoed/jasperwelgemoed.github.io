@@ -37,12 +37,14 @@ main-image: /TelescopeFront.png
 </div>
 
 ## Aim of the project
-The project aims to design a mid-infrared space-based interferometer capable of detecting and characterizing 25 temperate, Earth-like exoplanets around nearby Sun-like stars. By using nulling interferometry from a formation-flying telescope array positioned near the Sun-Earth L2 point, the mission seeks to directly observe the thermal emission of exoplanets in the 6–25 μm wavelength range. This enables the identification of key atmospheric biomarkers such as CO₂, H₂O, CH₄, and O₃, which are essential for assessing planetary habitability and the potential presence of life.
+The project aims to design a mid-infrared space-based interferometer capable of detecting and characterizing 25 temperate, Earth-like exoplanets around nearby Sun-like stars. By using nulling interferometry from a formation-flying telescope array positioned near the Sun-Earth L2 point, the mission tries to directly observe the thermal emission of exoplanets in the 6–25 μm wavelength range. This enables the identification of key atmospheric biomarkers such as CO₂, H₂O, CH₄, and O₃, which are essential for assessing planetary habitability and the potential presence of life.
 
 ## Method
 The mission concept uses a formation of four collector spacecraft and one beam combiner spacecraft flying in a controlled configuration near the Sun-Earth L2 point. These spacecraft perform nulling interferometry in the mid-infrared range (6–25 μm) to suppress starlight and isolate the thermal emission from exoplanets. The collector telescopes gather light from target stars and direct it to the central beam combiner via optical delay lines. By precisely adjusting optical path differences and maintaining formation accuracy through micro-propulsion and attitude control systems, the interferometer achieves the high contrast needed to detect faint planetary signals. Observations are planned over several years, with data processed to extract atmospheric spectra and identify biosignatures.
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/3714550f-ae50-4071-9461-186fc283a6f4" />
 
 ## Results
-<img width="1122" height="990" alt="image" src="https://github.com/user-attachments/assets/3714550f-ae50-4071-9461-186fc283a6f4" />
+
+
 
 
