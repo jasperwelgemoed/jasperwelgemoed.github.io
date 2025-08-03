@@ -47,7 +47,7 @@ I have created 2 lithophane shaped boxes with lights in them, ready to be sold (
   </figure>
 
   <figure>
-  <img src="/_projects/03_Lithophane/Color.jpg" alt="Colored Lithophane" width="300">
+  <img src="/_projects/03_Lithophane/Color.jpg" alt="Colored Lithophane" width="250">
   <figcaption>Figure 5: Colored Lithophane  </figcaption>
   </figure>
   
