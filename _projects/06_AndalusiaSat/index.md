@@ -50,12 +50,12 @@ I closed of the project by writing an advise to the governor of Andalucia.
 
   <figure>
   <img width="667" height="270" alt="image" src="https://github.com/user-attachments/assets/e4373107-6b70-4618-8ce8-cf5b4d011ce7" />
-  <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
+  <figcaption>Figure 1: Vegetation Quality Andalucia (darker green is better quality)  </figcaption>
   </figure>
   
   <figure>
   <img width="445" height="239" alt="image" src="https://github.com/user-attachments/assets/32732970-0284-4959-b89c-80c295f7de1c" />
-  <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
+  <figcaption>Figure 2: Water Declination Trend in one Andalucian Water Reserve  </figcaption>
   </figure>
   
 
