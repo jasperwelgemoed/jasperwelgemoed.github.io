@@ -52,7 +52,7 @@ main-image: /PointPainting.jpg
 ---
 
 ## Aim of the project
-The project focused on enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints set by the DelftBlue Supercomputer of the TU Delft. Specifically, we aimed to improve the mean average precision of the baseline performance for this network. 
+Enhancing the **CenterPoint 3D object detector** code base for the **View of Delft** dataset using practical improvements tailored to computational constraints set by the DelftBlue Supercomputer of the TU Delft. Specifically, we aimed to improve the mean average precision (mAP) of the baseline performance for this network for three object classes.  
 
 ### **Baseline Performance**
 
@@ -68,8 +68,7 @@ The project focused on enhancing the **CenterPoint 3D object detector** code bas
 After analysing the existing code base, we concluded that the network was performing great at detecting larger objects like cars, but lacked the ability to detect smaller objects like bicycles and pedestrians. So we decided to make the following adjustments to the existing base code:
 
 ### 1. Sensor Fusion
-**Technique:** Early fusion via PointPainting each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone). <br>
-**Goal:** Improve classification and localization, especially for small or occluded objects. <br>
+Early fusion via PointPainting, each LiDAR point is enriched with semantic class scores from RGB image segmentation using DeepLabV3 (MobileNetV2 backbone). <br>
 **Projection:** LiDAR points are projected into the image plane and assigned class probabilities. <br>
 **Rejected Alternative:** BEVFusion was considered but not used due to high computational cost. <br>
 
@@ -78,8 +77,7 @@ After analysing the existing code base, we concluded that the network was perfor
 **LiDAR augmentations:** Applied on the 7D fused representation using random rotation, scaling, and translation to introduce spatial diversity. <br>
 
 ### 3. Backbone
-**Change:** Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting small objects (e.g., cyclists, pedestrians). <br>
-**Rationale:** Residual connections in ResNet mitigate vanishing gradients and preserve spatial detail. <br>
+Introduced **ResNet** as a deeper backbone to better capture fine-grained features for detecting smaller objects as residual connections in ResNet mitigate vanishing gradients and preserve spatial detail. <br>
 
 ### 4. Neck
 **Baseline:** Used **SECONDFPN** to generate a high-resolution BEV map from backbone features. <br>
@@ -90,8 +88,8 @@ Integrated bidirectional flow across scales but didn’t outperform simpler fusi
 **Regularization:** Dropout (0.2) was added to improve generalization and reduce overfitting <br>
 
 ### 5. Head
-**Experimented** with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits. <br>
-**Tuning the CenterPoint head** alone yielded subpar performance. <br>
+Experimented with intermediate fusion using projected image features and LiDAR features in BEV space (BEVFusion-based), but it exceeded compute limits. <br>
+**Tuning the CenterPoint head** alone yielded performance below the baseline. <br> <br>
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
@@ -107,7 +105,7 @@ Integrated bidirectional flow across scales but didn’t outperform simpler fusi
 
   
 ## Key Result
-We performed training, validation and testing on these techniques separately and later combined multiple of the adjustments into one model to see if they together yield better performance. After performing training, validation and testing on these different combined models, we yielded the following results. 
+We performed training, validation and testing on these techniques separately (ablation study) and later combined multiple of the adjustments into one model to see if they together yield better performance. After performing training, validation and testing on these different combined models, we yielded the following results. 
 ### **3D Object Detection mAP Comparison**
 
 | Method                                        | Car mAP (%) | Pedestrian mAP (%) | Cyclist mAP (%) | Overall mAP (%) |
