@@ -30,7 +30,7 @@ Using solidworks I modelled the products and using my BambuLab Mini A1 3D printe
   </figure>
   
   <figure>
-  <img src="/_projects/03_Lithophane/c" alt="3D Printer" width="300">
+  <img src="/_projects/03_Lithophane/JTW08063.jpg" alt="3D Printer" width="300">
   <figcaption>Figure 3: Multicolor 3D Printer BambuLab  </figcaption>
   </figure>
   
