@@ -86,7 +86,7 @@ Fallback logic was implemented for failed detections, dropped apples, and low ba
 
 
   <figure>
-  <img src="/_projects/MDP/FFDMDP.png" alt="Functional Flow Diagram MDP" width="700">
+  <img src="/_projects/02_MDP/FFDMDP.png" alt="Functional Flow Diagram MDP" width="700">
   <figcaption>Figure 1: Functional Flow Diagram MDP  </figcaption>
   </figure>
   
@@ -115,7 +115,7 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
   
   
     <figure>
-    <img src="/_projects/MDP/Appledetection.jpg" alt="Apple Detection" width="400">
+    <img src="/_projects/02_MDP/Appledetection.jpg" alt="Apple Detection" width="400">
     <figcaption>Figure 1: Apple Detection  </figcaption>
     </figure>
     
