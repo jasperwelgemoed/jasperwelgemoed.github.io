@@ -120,7 +120,7 @@ A total of **12 system-level tests** were conducted to validate the robot’s fu
 
   <figure style="flex: 1; min-width: 300px;">
     <img src="/_projects/02_MDP/Appledetection.jpg" alt="Apple Detection" width="100%">
-    <figcaption>Figure 1: Apple Detection</figcaption>
+    <figcaption>Figure 2: Apple Detection</figcaption>
   </figure>
 
   <div style="flex: 1; min-width: 300px;">
