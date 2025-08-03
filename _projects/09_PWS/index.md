@@ -34,6 +34,10 @@ By making the outer surface of the volleybal touch sensitive, we could detect vo
   <img width="326" height="240" alt="image" src="https://github.com/user-attachments/assets/d7b2c8ab-2df1-4549-b39a-b5f5aba51417" />
   <figcaption>Figure 1: Voltage Peak (Ball Touched)  </figcaption>
   </figure>
+  <figure>
+  <img width="441" height="263" alt="image" src="https://github.com/user-attachments/assets/312ac480-09a9-4cd0-bc21-bbc8a66b0577" />
+  <figcaption>Figure 2: Pressure Sensor  </figcaption>
+  </figure>
   
   
 </div>
@@ -41,4 +45,4 @@ By making the outer surface of the volleybal touch sensitive, we could detect vo
 
 ## Results
 We succesfully presented our idea to the NEVOBO (Dutch Volleyball Association), we were nominated for best high-school project of 2018 by the Koninklijke Nederlandse Akademie van Wetenschappen (KNAW).
-<img width="441" height="263" alt="image" src="https://github.com/user-attachments/assets/312ac480-09a9-4cd0-bc21-bbc8a66b0577" />
+
