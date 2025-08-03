@@ -12,7 +12,7 @@ main-image: /image.png
 ## Project Documentation
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
 
-  <a href="https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjx" target="_blank" style="
+  <a href="[https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjx](https://hackmd.io/@jasperwelgemoed/Bk8wh2Sjkx)" target="_blank" style="
     background-color: #007bff;
     color: black;
     padding: 8px 16px;
