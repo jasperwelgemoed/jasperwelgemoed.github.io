@@ -106,7 +106,7 @@ To apply this to real handwriting, we approximated the latent vector of an input
 
 ## Results
 
-We successfully trained a StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST. 
+We successfully trained a StyleGAN to generate handwriting that mimics a learned style from datasets like EMNIST and self-made data. A time-lapse of the training and generation of the letters can be seen below.  
 
 <figure>
   <img src="/_projects/04_GANComputerVisionProject/GANGeneration.gif" alt="Style Generation" width="400">
