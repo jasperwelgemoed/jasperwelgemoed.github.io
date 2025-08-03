@@ -43,7 +43,7 @@ main-image: /MDPFront.png
 
 ## Aim of the project
 
-The aim of the project was to develop an autonomous apple-picking robot to support the UN’s Sustainable Development Goal of Zero Hunger. The robot was designed to assist UNity Orchard—an ecological apple farm facing labor shortages and harsh working conditions—by autonomously navigating the orchard, detecting and picking ripe apples, and communicating its status to the farmer, all while minimizing disruption and ensuring safe operation in a dynamic environment.
+The aim of the project was to develop software packages for an autonomous apple-picking robot to support the UN’s Sustainable Development Goal of Zero Hunger based on the Mirte Master platform-an educational robot designed by the TU Delft. The robot was designed to assist UNity Orchard—an ecological apple farm facing labor shortages and harsh working conditions—by autonomously navigating the orchard, detecting and picking ripe apples, and communicating its status to the farmer, all while minimizing disruption and ensuring safe operation in a dynamic environment. 
 
 ## Method
 ### Method Summary
