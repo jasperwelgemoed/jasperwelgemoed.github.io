@@ -22,17 +22,17 @@ Using solidworks I modelled the products and using my own 3D printer I fabricate
 
 
   <figure>
-  <img src="/_projects/Lithophane/Lithophane.jpg" alt="Square Lithophane" width="300">
+  <img src="/_projects/03_Lithophane/Lithophane.jpg" alt="Square Lithophane" width="300">
   <figcaption>Figure 1: Square Lithophane  </figcaption>
   </figure>
 
   <figure>
-  <img src="/_projects/Lithophane/Solidworks.jpg" alt="3D Model of Lithophane Box" width="300">
+  <img src="/_projects/03_Lithophane/Solidworks.jpg" alt="3D Model of Lithophane Box" width="300">
   <figcaption>Figure 2: 3D Model of Lithophane Box  </figcaption>
   </figure>
   
   <figure>
-  <img src="/_projects/Lithophane/JTW08063.jpg" alt="3D Printer" width="300">
+  <img src="/_projects/03_Lithophane/JTW08063.jpg" alt="3D Printer" width="300">
   <figcaption>Figure 3: Multicolor 3D Printer BambuLab  </figcaption>
   </figure>
   
@@ -44,12 +44,12 @@ I have created 2 lithophane shaped boxes with lights in them, ready to be sold. 
 
 
   <figure>
-  <img src="/_projects/Lithophane/Heart.png" alt="Heart Shaped Lithophane Box" width="300">
+  <img src="/_projects/03_Lithophane/Heart.png" alt="Heart Shaped Lithophane Box" width="300">
   <figcaption>Figure 4: Heart Shaped Lithophane Box  </figcaption>
   </figure>
 
   <figure>
-  <img src="/_projects/Lithophane/Color.jpg" alt="Colored Lithophane" width="300">
+  <img src="/_projects/03_Lithophane/Color.jpg" alt="Colored Lithophane" width="300">
   <figcaption>Figure 5: Colored Lithophane  </figcaption>
   </figure>
   
