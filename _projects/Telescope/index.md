@@ -1,4 +1,4 @@
-<img width="1122" height="990" alt="image" src="https://github.com/user-attachments/assets/6450a740-2cea-4d7a-aae6-2a80e0441851" />---
+---
 layout: post
 title: Feasability Research for a Space Telescope for Imaging Earth-like Exoplanets in the Mid-infrared. (2023)
 description: "This project researched a conceptual space mission aimed at detecting and characterizing 25 temperate, Earth-like exoplanets orbiting Sun-like stars using mid-infrared interferometry. Developed in collaboration with the Netherlands Institute for Space Research, NLR and ESA. The mission focuses on designing a formation-flying telescope array operating near the Sun-Earth L2 point. The report explores the technical feasibility and system design—covering spacecraft configuration, attitude control, thermal systems, propulsion, data handling, and telecommunications. Leveraging technologies from missions like the James Webb Space Telescope and ESA’s Darwin, the mission aims to expand the search for habitable worlds and the potential for extraterrestrial life." 
