@@ -44,7 +44,7 @@ main-image: /StratosVFront.png
 The aim of the Stratos V project is to design, build, test, launch to space, recover, and re-launch a refurbishable, liquid bi-propellant rocket to demonstrate the feasibility of reusable and sustainable launch vehicles in student and amateur rocketry. The 2022/23 team specifically focuses on preliminary and detailed design as well as testing selected subsystems, laying the foundation for future teams to achieve full reusability and break DARE’s internal altitude record of 12.5km.
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   <figure>
-  <img src="/_projects/Stratos_V/Mission.png" alt="Valispace" width="400">
+  <img src="/_projects/08_Stratos_V/Mission.png" alt="Valispace" width="400">
   <figcaption>Figure 1: Mission Overview  </figcaption>
   </figure>
 </div>
@@ -65,23 +65,23 @@ My task as chief systems engineer was to ensure the engineers could do what they
   
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   <figure>
-  <img src="/_projects/Stratos_V/Teamstructure.png" alt="Team Structure" width="700">
+  <img src="/_projects/08_Stratos_V/Teamstructure.png" alt="Team Structure" width="700">
   <figcaption>Figure 2: Team Structure  </figcaption>
   </figure>
   
   <figure>
-  <img src="/_projects/Stratos_V/Presentatie.jpg" alt="Presenting" width="400">
+  <img src="/_projects/08_Stratos_V/Presentatie.jpg" alt="Presenting" width="400">
   <figcaption>Figure 3: Daily Systems Engineering Meeting   </figcaption>
   </figure>
 </div>
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
   <figure>
-  <img src="/_projects/Stratos_V/Valispace.png" alt="Valispace" width="400">
+  <img src="/_projects/08_Stratos_V/Valispace.png" alt="Valispace" width="400">
   <figcaption>Figure 4: Valispace  </figcaption>
   </figure>
   <figure>
-  <img src="/_projects/Stratos_V/WBS.png" alt="WBS" width="600">
+  <img src="/_projects/08_Stratos_V/WBS.png" alt="WBS" width="600">
   <figcaption>Figure 5: Example of work breakdown structure  </figcaption>
   </figure>
 </div>
@@ -94,7 +94,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
 
 
   <figure>
-  <img src="/_projects/Stratos_V/Documentation.png" alt="Documentation" width="500">
+  <img src="/_projects/08_Stratos_V/Documentation.png" alt="Documentation" width="500">
   <figcaption>Figure 6: Snippet of documentation generated  </figcaption>
   </figure>
   
@@ -109,7 +109,7 @@ After one year of fulltime working on this project we managed to design & print 
 
 
   <figure>
-  <img src="/_projects/Stratos_V/2.jpg" alt="Hot-Fire" width="600">
+  <img src="/_projects/08_Stratos_V/2.jpg" alt="Hot-Fire" width="600">
   <figcaption>Figure 7: Hot-Fire Engine  </figcaption>
   </figure>
   
@@ -117,7 +117,7 @@ After one year of fulltime working on this project we managed to design & print 
 
 
   <figure>
-    <img src="/_projects/Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="350">
+    <img src="/_projects/08_Stratos_V/HotfireChronologically_2_5.gif" alt="Style Generation" width="350">
     <figcaption>Figure 8: All Engine Tests</figcaption>
   </figure>
 </div>
