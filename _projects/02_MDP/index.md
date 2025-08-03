@@ -46,11 +46,9 @@ main-image: /MDPFront.png
 The aim of the project was to develop software packages for an autonomous apple-picking robot to support the UN’s Sustainable Development Goal of Zero Hunger based on the Mirte Master platform-an educational robot designed by the TU Delft. The robot was designed to assist UNity Orchard—an ecological apple farm facing labor shortages and harsh working conditions—by autonomously navigating the orchard, detecting and picking ripe apples, and communicating its status to the farmer, all while minimizing disruption and ensuring safe operation in a dynamic environment. 
 
 ## Method
-### Method Summary
+In a group totalling five students we divided tasks based on each student's expertise (Planning & Decision/Machine Perception/Human Robot Interaction/Manipulation). I had the role of systems engineer. My main responsibility was to integrate all created ROS-nodes and to ensure that the software package was capable of meeting our main mission and functional requirements.
 
-The method consisted of designing, implementing, and integrating a ROS 2-based software system for an autonomous apple-picking robot, guided by a structured functional architecture.
-
-A **functional hierarchy** was created with six core parent functions:
+I created a **functional hierarchy** with six core parent functions:
 
 1. Perceive environment  
 2. Navigate around orchard  
@@ -61,10 +59,10 @@ A **functional hierarchy** was created with six core parent functions:
 
 These were decomposed into child functions and visualized using a **SysML block diagram**, an **N² chart**, and a **functional flow diagram** with swimlanes to show node responsibilities.
 
-Each function was implemented via dedicated or shared ROS 2 nodes:
+I integrated each function via dedicated or shared ROS 2 nodes:
 
 - **SLAM Toolbox** was used to map the environment and localize the robot on a static map.
-- A custom **EmergencyBrakeCheck** node read sonar data to perform emergency braking when dynamic obstacles (e.g. workers, animals) were detected within 20 cm.
+- A custom **EmergencyBrakeCheck** node read sonar data to perform emergency braking when dynamic obstacles (e.g. workers, animals) were detected within a restricted range.
 - The **NavPlanner** node used the `nav2` stack with a SMAC lattice planner, restricted to spin-and-forward motion for simpler obstacle avoidance.
 - The **AppleDetection** node used **YOLOv8** (via Ultralytics) and **OpenCV** to detect ripe apples using RGB images from both base and gripper-mounted cameras.
 - The **GripperPlanner** node calculated inverse kinematics-based trajectories for the robotic arm and controlled the gripper’s grasping and placing behavior.
