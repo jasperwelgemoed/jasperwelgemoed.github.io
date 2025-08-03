@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Development of a Small Scale Tool Switching Mechanism for Agricultural Robotic Manipulators (2024)
-description: Designed, developed and tested a reliable, low-cost, lightweight toolswitching mechanism to work on a mobile robot with a manipulator; an open source educational mobile robot platform developed by the TU Delft.
+description: Designed, developed and tested a reliable, low-cost, lightweight toolswitching mechanism to work on a mobile robot with a manipulator; an open source educational mobile robot platform developed by the TU Delft Mirte Master.
 skills: 
 - Project Management
 - CAD (Solidworks)
@@ -28,7 +28,7 @@ main-image: /MMDesignB.png
 ---
 
 ## Aim of the project
-The aim of this project is to develop a small-scale, low-budget agricultural tool-switching mechanism compatible with the Mirte Master robot, specifically optimized for greenhouse conditions. The goal is to enable the robot to switch between different tools autonomously, addressing challenges such as precision limitations, moisture and dirt resistance, and cost-efficiency, ultimately improving the robot’s functionality for owners of smaller greenhouses.
+The aim of this project is to develop a small-scale, low-budget agricultural tool-switching mechanism compatible with the Mirte Master robot, specifically optimized for greenhouse conditions. The goal is to enable the robot to switch between different tools autonomously, addressing challenges such as precision limitations, moisture and dirt resistance, and cost-efficiency, ultimately improving the Mirte Master robot’s functionality for owners of smaller greenhouses and with that the working conditions of the greenhouse workers. 
 
 
 ## Method
@@ -39,13 +39,9 @@ The methodology of this project follows a structured NASA systems engineering an
 | **Pre-Phase A – Mission Study**                  | Identifying stakeholders, refining the project scope, and formulating a clear mission need statement. |
 | **Phase A – Concept Development**                | Analyzing the previous design, defining system-level requirements, and generating multiple design concepts. |
 | **Phase B – Preliminary Design**                 | Selecting the most promising concept through trade-offs and testing early prototypes using 3D printing. |
-| **Phase C – Detailed Design**                    | Finalizing the design for manufacturing, including CAD models and connection definitions.         |
+| **Phase C – Detailed Design**                    | Finalizing the design for manufacturing, including CAD models and connection definitions, FEM analysis.         |
 | **Phase D/E – Production, Testing, and Final Iteration** | Manufacturing the system, conducting integration with the parallel group, and performing functional and performance tests. |
 | **Phase F – Verification and Documentation**     | Verifying requirement compliance and compiling the final report.                                  |
-
-
-This phased methodology ensures a well-documented, collaborative, and test-driven development process for creating a functional tool-switching mechanism.
-
 
   
 ## Key Result
