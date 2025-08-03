@@ -95,7 +95,7 @@ Fallback logic was implemented for failed detections, dropped apples, and low ba
   
 ## Results Summary
 
-A total of **12 system-level tests (T1–T12)** were conducted to validate the robot’s functionality against the defined requirements. Out of these, **10 tests passed successfully**, demonstrating strong performance in perception, manipulation, and communication. Two tests (T3 and T10) related to navigation did not pass due to incomplete integration of the `nav2` stack with the MIRTE robot.
+A total of **12 system-level tests** were conducted to validate the robot’s functionality against the defined requirements. Out of these, **10 tests passed successfully**, demonstrating strong performance in perception, manipulation, and communication. Two tests related to navigation did not pass due to incomplete integration of the `nav2` stack with the MIRTE robot.
 
 - **Startup and System Readiness:**  
   The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.
@@ -106,6 +106,22 @@ A total of **12 system-level tests (T1–T12)** were conducted to validate the r
   The robot accurately localized itself with <5 cm error using a Monte Carlo particle filter and successfully detected basket positions.
   {% include youtube-video.html id="Mrpe3mMtA3s" autoplay= "false"%}
 
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+
+  <div style="flex: 1; min-width: 300px;">
+    <p><strong>Startup and System Readiness:</strong><br>
+    The robot initialized correctly, handled state transitions reliably, and maintained clear communication with the farmer via a responsive GUI.</p>
+    {% include youtube-video.html id="cQ7CS-sukfs" autoplay="false" %}
+  </div>
+
+  <div style="flex: 1; min-width: 300px;">
+    <p><strong>Localization and State Awareness:</strong><br>
+    The robot accurately localized itself with &lt;5 cm error using a Monte Carlo particle filter and successfully detected basket positions.</p>
+    {% include youtube-video.html id="Mrpe3mMtA3s" autoplay="false" %}
+  </div>
+
+</div>
 
 - **Camera Perception and Object Detection:**  
   Apple detection reached 90% accuracy within 2 meters, and relative position estimates had average errors of 1.5–2 cm.
