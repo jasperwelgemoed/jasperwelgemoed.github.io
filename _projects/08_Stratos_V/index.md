@@ -103,7 +103,7 @@ My task as chief systems engineer was to ensure the engineers could do what they
 
 ## Results Summary
 
-After one year of fulltime working on this project we managed to design & print a new rocket engine, test it, create detailed designs for almost every sub-component of the rocket. 
+After one year of fulltime working on this project we managed to design & print a new rocket engine, test it, create detailed designs for almost every sub-component of the rocket. This entire year has been an amazing experience and I feel priviledged to be able to work with so many talented engineers that put all of their effort in this project.  
 
 <div style="display: flex; gap: 10px; justify-content: center; align-items: flex-start;">
 
