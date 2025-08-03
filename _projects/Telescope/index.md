@@ -53,5 +53,5 @@ Our mission concept uses a formation of four collector spacecraft and one beam c
 </div>
 
 ## Results
-We succesfully presented our final mission design at the Netherlands Institute for Space Research. For details about the designed systems please see the **Project Documentation*. 
+We succesfully presented our final mission design at the Netherlands Institute for Space Research. For details about the designed systems please see the **Project Documentation**. 
 
