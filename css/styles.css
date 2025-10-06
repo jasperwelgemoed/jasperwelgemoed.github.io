@@ -897,141 +897,7 @@ footer p {
     .video-container {
         margin:0 auto;
     }
-    .bio-section {
-      margin-top: 100px;
-      text-align: center;
-      position: relative;
-    }
-    
-    .section-title h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 60px;
-    }
-    
-    .bio-wrapper {
-      position: relative;
-      display: inline-block;
-      padding: 40px;
-      margin: 0 auto;
-      text-align: left;
-    }
-    
-    .corner {
-      width: 20px;
-      height: 20px;
-      border: 3px solid #2a2a2a;
-      position: absolute;
-      z-index: 2;
-    }
-    
-    .top-left {
-      top: 0;
-      left: 0;
-      border-right: none;
-      border-bottom: none;
-    }
-    
-    .top-right {
-      top: 0;
-      right: 0;
-      border-left: none;
-      border-bottom: none;
-    }
-    
-    .bottom-left {
-      bottom: 0;
-      left: 0;
-      border-right: none;
-      border-top: none;
-    }
-    
-    .bottom-right {
-      bottom: 0;
-      right: 0;
-      border-left: none;
-      border-top: none;
-    }
-    
-    .bio-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-    }
-    
-    .bio-image {
-      text-align: center;
-    }
-    
-    .bio-image img {
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-    }
-    
-    .bio-name {
-      margin: 20px 0 10px;
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
-    
-    .bio-title,
-    .bio-location {
-      margin: 0;
-      font-size: 1rem;
-      color: #555;
-    }
-    
-    .bio-text {
-      max-width: 600px;
-    }
-    
-    .about-heading {
-      font-size: 1.8rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .about-heading a {
-      color: #3aa398; /* or any petrol tone you like */
-      font-size: 1.2rem;
-      transition: color 0.2s ease;
-    }
-    
-    .about-heading a:hover {
-      color: #63c5b8;
-    }
-    
-    
-    .about-slideshow {
-      width: 100%;
-      max-width: 1000px;
-      margin: 2rem auto;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .about-slideshow .slide-track {
-      display: flex;
-      width: fit-content;
-      animation: scroll 30s linear infinite;
-      gap: 10px;
-    }
-    
-    .about-slideshow img {
-      height: 120px;
-      width: auto;
-      object-fit: cover;
-      border-radius: 8px;
-      flex-shrink: 0;
-    }
-
+   
     
 }
 
@@ -1106,6 +972,141 @@ footer p {
   object-fit: cover;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.bio-section {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+}
+    
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+    
+.bio-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.corner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #2a2a2a;
+  position: absolute;
+  z-index: 2;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+    
+.top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+    
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+    
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+    
+.bio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+    
+.bio-image {
+  text-align: center;
+}
+    
+.bio-image img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+    
+.bio-name {
+  margin: 20px 0 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+    
+.bio-title,
+.bio-location {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+    
+.bio-text {
+  max-width: 600px;
+}
+    
+.about-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+    
+.about-heading a {
+  color: #3aa398; /* or any petrol tone you like */
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+    
+.about-heading a:hover {
+  color: #63c5b8;
+}
+    
+    
+.about-slideshow {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+    
+.about-slideshow .slide-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+  gap: 10px;
+}
+    
+.about-slideshow img {
+  height: 120px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 
