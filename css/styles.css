@@ -1138,27 +1138,4 @@ footer p {
   }
 }
 
-/* === MOBILE FIX for SLIDESHOW === */
-@media (max-width: 768px) {
-  .about-slideshow {
-    max-width: 95%;
-    height: auto;
-    margin: 1.5rem auto;
-    border-radius: 10px;
-  }
 
-  .about-slideshow img {
-    height: 80px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-slideshow {
-    max-width: 90%;
-    margin: 1rem auto;
-  }
-
-  .about-slideshow img {
-    height: 60px;
-  }
-}
