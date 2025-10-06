@@ -1138,42 +1138,27 @@ footer p {
   }
 }
 
+/* === MOBILE FIX for SLIDESHOW === */
 @media (max-width: 768px) {
-  .bio-wrapper {
-    padding: 20px;
-    margin: 0 10px;
+  .about-slideshow {
+    max-width: 95%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 10px;
   }
 
-  .bio-image img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .bio-text {
-    max-width: 90%;
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  .bio-content {
-    flex-direction: column;
-    gap: 20px;
+  .about-slideshow img {
+    height: 80px;
   }
 }
 
 @media (max-width: 480px) {
-  .bio-wrapper {
-    padding: 10px;
+  .about-slideshow {
+    max-width: 90%;
+    margin: 1rem auto;
   }
 
-  .bio-image img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .bio-text {
-    font-size: 0.85rem;
+  .about-slideshow img {
+    height: 60px;
   }
 }
-
-
