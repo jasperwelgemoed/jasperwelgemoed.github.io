@@ -543,7 +543,7 @@ footer .license {
     gap: 0;  /* Changed from 10px to 0 */
 }
 
-footer span, p {
+footer span, footer p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
