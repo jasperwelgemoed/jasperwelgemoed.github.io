@@ -294,26 +294,7 @@ nav .mobile-nav {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-/* Minimal centered section header */
-.project-grid-section h2 {
-  text-align: center;
-  font-size: clamp(28px, 3vw, 42px);
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 40px;
-  position: relative;
-}
 
-/* small minimal underline */
-.project-grid-section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  background: var(--border-color);
-  margin: 14px auto 0 auto;
-  border-radius: 2px;
-}
 
 .project-card img {
   width: 100%;
