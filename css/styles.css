@@ -1,6 +1,9 @@
 ---
 ---
 
+/* =========================
+   VARIABLES
+   ========================= */
 :root {
   --text-color: {{ site.colors.text }};
   --border-color: {{ site.colors.border }};
@@ -10,6 +13,9 @@
   --light-background-color: {{ site.colors.light_background }};
 }
 
+/* =========================
+   BASE RESET
+   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +28,6 @@ html {
 }
 
 body {
-  /* ✅ responsive page padding (helps mobile layout a lot) */
   padding: 0 clamp(10px, 4vw, 50px);
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
@@ -60,7 +65,9 @@ p {
   padding: 0;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+   ========================= */
 nav {
   display: flex;
   justify-content: space-between;
@@ -72,6 +79,7 @@ nav {
   top: 0;
   z-index: 100;
 
+  /* Glass effect */
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -105,7 +113,6 @@ nav .right a:last-child {
   border-radius: 10px;
 }
 
-/* ⚠️ fixed: removed trailing comma that breaks the rule */
 nav .right a:last-child:hover,
 nav .right a span:last-child:hover,
 nav .mobile-nav a:last-child:hover,
@@ -115,7 +122,7 @@ nav .mobile-nav a span:last-child:hover {
   border-radius: 10px;
 }
 
-/* Navbar Mobile Menu Button */
+/* Mobile menu button */
 nav .menu-toggle {
   display: none;
   background: none;
@@ -147,7 +154,6 @@ nav .hamburger::after {
 nav .hamburger::before {
   top: -8px;
 }
-
 nav .hamburger::after {
   bottom: -8px;
 }
@@ -156,8 +162,23 @@ nav .mobile-nav {
   display: none;
 }
 
-/* SECTION 1: Hero */
+/* Navbar logo */
+.navbar-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* =========================
+   HERO + PARTICLES
+   ========================= */
 .hero-section {
+  position: relative; /* ✅ locks particles to hero */
+  overflow: hidden;
+
   padding: 120px 20px;
   margin: 0;
   display: flex;
@@ -165,13 +186,28 @@ nav .mobile-nav {
   align-items: center;
   flex-direction: column;
   background: transparent;
-  position: relative;
-  overflow: hidden;
 }
 
-/* Modern centered hero layout */
+/* Full-width particles, centered to viewport, behind text */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent; /* ✅ removes grey block */
+}
+
+/* Hero content always above */
 .centered-hero {
-  padding: 0;
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
   margin-top: 60px;
   margin-bottom: 120px;
   padding: 120px 20px;
@@ -203,6 +239,7 @@ nav .mobile-nav {
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -220,36 +257,24 @@ nav .mobile-nav {
   color: white;
 }
 
-/* NAVIGATION ARROW */
-.arrow {
-  margin-top: 125px;
-  margin-bottom: 300px;
-  display: flex;
-  justify-content: center;
-}
-
-.arrow a {
-  font-size: 20px;
-  color: var(--link-color);
-  display: inline-block;
-  align-items: center;
-  border: 2px solid var(--link-color);
-  border-radius: 15px;
-  padding: 10px 20px;
+/* Scroll arrow */
+.scroll-arrow {
+  margin-top: 2rem;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.arrow a > * {
-  display: block;
-  margin: 0 auto;
+.scroll-arrow img {
+  width: 40px;
+  height: auto;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
 }
 
-.arrow a:hover {
-  color: var(--text-color);
-  border: 2px solid var(--text-color);
-}
-
-/*SECTION 2: PROJECT GRID */
+/* =========================
+   PROJECT GRID
+   ========================= */
 .project-grid-section {
   margin-bottom: 100px;
   margin-top: 50px;
@@ -284,7 +309,6 @@ nav .mobile-nav {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
   padding: 15px;
   background: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -294,7 +318,6 @@ nav .mobile-nav {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-
 
 .project-card img {
   width: 100%;
@@ -336,7 +359,6 @@ nav .mobile-nav {
 .project-card .project-description {
   display: -webkit-box;
   -webkit-line-clamp: 4;
-  line-clamp: 4px;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -359,7 +381,9 @@ nav .mobile-nav {
   text-decoration: underline;
 }
 
-/* SECTION 3: SKILLS */
+/* =========================
+   SKILLS
+   ========================= */
 .skills-section {
   margin-bottom: 100px;
   display: flex;
@@ -414,7 +438,9 @@ nav .mobile-nav {
   font-size: 14px;
 }
 
-/* SECTION 4: CONTACT */
+/* =========================
+   CONTACT
+   ========================= */
 .contact-section {
   padding: 25px 25px;
   max-width: 600px;
@@ -466,7 +492,9 @@ nav .mobile-nav {
   transition: 0.1s;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 footer {
   padding: 0;
   font-size: 12px;
@@ -474,10 +502,12 @@ footer {
   min-height: 150px;
   flex-shrink: 0;
   background-color: var(--light-background-color);
+
   width: 100vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -524,7 +554,6 @@ footer .license {
   gap: 0;
 }
 
-/* ⚠️ fixed: your original `footer span, p` targeted ALL p tags globally */
 footer span,
 footer p {
   word-wrap: break-word;
@@ -539,7 +568,9 @@ footer p {
   margin: 0;
 }
 
-/* PROJECT POST VIEW */
+/* =========================
+   POST VIEW
+   ========================= */
 .post-view {
   margin: 25px auto;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -572,31 +603,6 @@ footer p {
   margin-bottom: 10px;
 }
 
-.post-view .summary .project-description {
-  margin-bottom: 10px;
-}
-
-.post-view .summary .skills-card {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.post-view .summary .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 5px;
-}
-
-.post-view .summary .skill {
-  background-color: var(--light-background-color);
-  color: var(--link-color);
-  border-radius: 12px;
-  padding: 5px 10px;
-  font-size: 0.9em;
-}
-
 .post-view .content {
   padding: 0 50px;
   border-radius: 10px;
@@ -627,12 +633,12 @@ footer p {
   margin-bottom: 1em;
 }
 
-.post-view .content p {
-  margin-bottom: 1em;
-}
-
 .post-view .content a:hover {
   color: #2980b9;
+}
+
+.post-view .content p {
+  margin-bottom: 1em;
 }
 
 .post-view .content ul,
@@ -701,66 +707,10 @@ footer p {
   width: 100%;
   height: 100%;
 }
-.hero-section{
-  position: relative;          /* ✅ IMPORTANT: makes particles stick to hero */
-  overflow: hidden;            /* ✅ prevents particles bleeding outside */
-}
-
-#particles-js{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-  pointer-events: none;
-  background: transparent;
-}
-
-
-  /* ✅ REMOVE the grey block */
-  background: transparent;
-}
-
-/* Hero content above particles */
-.centered-hero{
-  position: relative;
-  z-index: 1;
-}
-
-/* Particles */
-#particles-js{
-  position: absolute;
-  inset: 0;                    /* top:0; right:0; bottom:0; left:0 */
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-
-  /* ✅ REMOVE the grey block */
-  background: transparent;
-}
-.centered-hero{
-  position: relative;
-  z-index: 1;
-}
-
-/* Navbar logo */
-.navbar-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 10px;
-  vertical-align: middle;
-}
 
 /* =========================
-   ✅ ABOUT / BIO SECTION
+   BIO / ABOUT
    ========================= */
-
 .bio-section {
   margin-top: 100px;
   text-align: center;
@@ -892,71 +842,25 @@ footer p {
   flex-shrink: 0;
 }
 
-/* Animation */
+/* =========================
+   ANIMATIONS
+   ========================= */
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.scroll-arrow {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.scroll-arrow img {
-  width: 40px;
-  height: auto;
-  opacity: 0.8;
-  animation: bounce 2s infinite;
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(8px);
-  }
-  60% {
-    transform: translateY(4px);
-  }
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(8px); }
+  60% { transform: translateY(4px); }
 }
 
 /* =========================
-   ✅ RESPONSIVE STYLES
+   RESPONSIVE
    ========================= */
-
 @media (max-width: 1200px) {
-  body {
-    padding: 0 20px;
-  }
-
-  .hero-section {
-    padding: 0 20px;
-    border: none;
-  }
-
-  .hero-section .group {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .hero-section .headshot img {
-    width: 300px;
-    justify-content: center;
-  }
-
-  .hero-section .text h2 {
-    font-size: 35px;
-  }
+  body { padding: 0 20px; }
 
   .project-grid-section .grid-container .project-card {
     max-width: 500px;
@@ -966,13 +870,8 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  nav .menu-toggle {
-    display: block;
-  }
+  .desktop-nav { display: none; }
+  nav .menu-toggle { display: block; }
 
   .mobile-nav {
     display: none;
@@ -987,9 +886,7 @@ footer p {
     z-index: 1000;
   }
 
-  .mobile-nav.active {
-    display: flex;
-  }
+  .mobile-nav.active { display: flex; }
 
   .mobile-nav a {
     color: var(--text-color);
@@ -1002,153 +899,60 @@ footer p {
     min-height: 50px;
   }
 
-  .menu-toggle.active .hamburger {
-    background: transparent;
-  }
-
-  .menu-toggle.active .hamburger::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
-  .menu-toggle.active .hamburger::after {
-    transform: rotate(-45deg);
-    bottom: 0;
-  }
-
-  .arrow {
-    display: none;
-  }
+  .menu-toggle.active .hamburger { background: transparent; }
+  .menu-toggle.active .hamburger::before { transform: rotate(45deg); top: 0; }
+  .menu-toggle.active .hamburger::after { transform: rotate(-45deg); bottom: 0; }
 
   .project-grid-section .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .contact-section .group {
-    flex-direction: column;
-  }
+  .contact-section .group { flex-direction: column; }
 
-  footer {
-    padding: 0 35px;
-  }
+  footer { padding: 0 35px; }
+  footer .links a { font-size: 15px; margin: 0 15px; }
+  footer .links { margin-bottom: 10px; }
 
-  footer .links a {
-    font-size: 15px;
-    margin: 0 15px;
-  }
+  .post-view { margin: 0; }
+  .post-view .content { padding: 0 5px; margin: 0; }
+  .post-view .summary { padding: 5px 5px; }
 
-  footer .links {
-    margin-bottom: 10px;
-  }
-
-  .post-view {
-    margin: 0;
-  }
-
-  .post-view .content {
-    padding: 0 5px;
-    margin: 0;
-  }
-
-  .post-view .summary {
-    padding: 5px 5px;
-  }
-
-  /* ✅ MOBILE ABOUT FIXES (this is the important part) */
-  .bio-section {
-    margin-top: 40px;
-  }
-
-  .section-title h2 {
-    font-size: 1.8rem;
-    margin-bottom: 24px;
-  }
+  /* ✅ mobile Bio/About tile */
+  .bio-section { margin-top: 40px; }
+  .section-title h2 { font-size: 1.8rem; margin-bottom: 24px; }
 
   .bio-wrapper {
-    display: block;              /* was inline-block -> causes weird sizing on mobile */
+    display: block;
     width: 100%;
     max-width: 720px;
-    padding: 16px;               /* was 40px */
+    padding: 16px;
     margin: 0 auto;
   }
 
   .bio-content {
     flex-direction: column;
     align-items: center;
-    gap: 18px;                   /* was 40px */
+    gap: 18px;
   }
 
   .bio-image img {
-    width: 140px;                /* was 180px */
+    width: 140px;
     height: 140px;
   }
 
-  .about-heading {
-    font-size: 1.4rem;
-  }
-
-  .bio-text {
-    max-width: 100%;
-  }
+  .about-heading { font-size: 1.4rem; }
+  .bio-text { max-width: 100%; }
 
   .corner {
-    width: 14px;                 /* smaller corners */
+    width: 14px;
     height: 14px;
     border-width: 2px;
   }
 
-  .about-slideshow img {
-    height: 90px;                /* smaller gallery images */
-  }
+  .about-slideshow img { height: 90px; }
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 0 10px;
-  }
-
-  .hero-section {
-    padding: 0 20px;
-  }
-
-  .hero-section .text h2 {
-    font-size: 30px;
-  }
-
-  .hero-section .text .links a {
-    font-size: 13px;
-    padding: 5px;
-  }
-
-  .hero-section .headshot img {
-    width: 275px;
-    justify-content: center;
-  }
-
-  .skills-section {
-    padding: 0 5px;
-  }
-
-  .skills-section span {
-    font-size: 16px;
-  }
-
-  .contact-section {
-    padding: 0 20px;
-  }
-
-  .post-view {
-    margin: 5px;
-    border: none;
-    box-shadow: none;
-  }
-
-  .post-view .content {
-    padding: 5px;
-  }
-
-  /* even tighter about tile on small phones */
-  .bio-wrapper {
-    padding: 14px;
-  }
+  body { padding: 0 10px; }
+  .bio-wrapper { padding: 14px; }
 }
