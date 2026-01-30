@@ -179,7 +179,7 @@ nav .mobile-nav {
   position: relative; /* ✅ locks particles to hero */
   overflow: hidden;
 
-  padding: 120px 20px;
+  padding: 120px 0px;
   margin: 0;
   display: flex;
   justify-content: center;
