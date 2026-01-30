@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  /* ✅ changed: responsive page padding (fixes "too wide" feeling on phone) */
+  /* Responsive page padding */
   padding: 0 clamp(10px, 4vw, 50px);
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
@@ -59,14 +59,19 @@ p {
 }
 
 /* =========================
-   ✅ ABOUT SECTION FIX
-   =========================
-   This targets your About area if it uses id="bio"
-   (you already link to it with href="#bio").
-*/
+   ✅ ABOUT / BIO SECTION FIX
+   ========================= */
+
+/* The section itself (controls spacing around it) */
 #bio {
-  padding: clamp(14px, 3.5vw, 40px);
   margin: clamp(14px, 3.5vw, 40px) 0;
+}
+
+/* The "tile" container (THIS is usually what feels too big) */
+.bio-wrapper {
+  padding: clamp(14px, 3.5vw, 32px);
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 /* NAVBAR */
@@ -718,7 +723,9 @@ footer p {
   height: 100%;
 }
 
-/* Responsive styles */
+/* =========================
+   Responsive styles
+   ========================= */
 @media (max-width: 1200px) {
   body {
     padding: 0 20px;
@@ -756,10 +763,6 @@ footer p {
   }
 
   nav .menu-toggle {
-    display: block;
-  }
-
-  .menu-toggle {
     display: block;
   }
 
@@ -850,19 +853,9 @@ footer p {
     padding: 5px 5px;
   }
 
-  .post-view.image-gallery {
-    column-gap: 5px;
-    row-gap: 5px;
-  }
-
-  .video-container {
-    margin: 0 auto;
-  }
-
-  /* ✅ mobile override for About section */
-  #bio {
+  /* ✅ phone/tablet sizing for the About tile */
+  .bio-wrapper {
     padding: 14px;
-    margin: 16px 0;
   }
 }
 
@@ -904,5 +897,10 @@ footer p {
 
   .post-view .content {
     padding: 5px;
+  }
+
+  /* ✅ extra small phones */
+  .bio-wrapper {
+    padding: 12px;
   }
 }
