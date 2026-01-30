@@ -1,445 +1,908 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root {
+  --text-color: #1f2937;
+  --border-color: #e5e9f0;
+  --link-color: #3b82f6;
+  --highlight-color: #1e40af;
+  --background-color: #f8faff;
+  --light-background-color: #f1f5ff;
+}
 
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/syntax.css">
+html {
+  scroll-behavior: smooth;
+}
 
-    <script src="/assets/js/script.js"></script>
+body {
+  /* ✅ changed: responsive page padding (fixes "too wide" feeling on phone) */
+  padding: 0 clamp(10px, 4vw, 50px);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-    
-    <title>John Doe's Portfolio</title>
-    
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
 
-</head>
-<body>
-    <!-- NAVBAR -->
-     <!-- _includes/nav.html -->
-<nav>
-    <div class="left">
-        <a href="/">John Doe</a>
-    </div>
+h1 {
+  color: var(--text-color);
+  font-size: calc(14px + 1vw);
+}
 
-    <!-- Desktop Menu -->
-    <div class="right desktop-nav">
-        <a href="/">
-            <span>Home</span>
-        </a>
-        <a href="/projects/">
-            <span>Projects</span>
-        </a>
-        <a href="https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <span>Resume</span>
-        </a>
-    </div>
+h2 {
+  color: var(--text-color);
+  font-size: calc(11px + 0.8vw);
+}
 
-    <!-- Mobile Menu Button -->
-    <button class="menu-toggle" aria-label="Toggle menu">
-        <i class="fa fa-bars fa-2x"></i>
-    </button>
+h3 {
+  font-weight: normal;
+  color: var(--text-color);
+  font-size: calc(9px + 0.6vw);
+}
 
-    <!-- Mobile Menu -->
-    <div class="mobile-nav">
-        <a href="/">
-            <span>Home</span>
-        </a>
-        <a href="/projects/">
-            <span>Projects</span>
-        </a>
-        <a href="https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <span>Resume</span>
-        </a>
-    </div>
-</nav>
+span {
+  color: var(--text-color);
+}
 
-     <div class="page">
-<!-- SECTION 1: Hero -->
-<section class="hero-section">
-    <div class="group">
-        <div class="text">
-            <h2>
-                I'm John 
-                
-                <span class="external-links">
-                    
-                    
-                        
-                            
-                            <a href="https://www.linkedin.com/in/aramlee1/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        
-                            
-                        
-                    
-                        
-                    
-                        
-                            
-                                <a href="https://github.com/leea2/" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            
-                            
-                        
-                    
-                        
-                            
-                                <a href="https://stackoverflow.com/users/test/" target="_blank">
-                                    <i class="fa-brands fa-stack-overflow"></i>
-                                </a>
-                            
-                            
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                </span>
-                
-            </h2>
-            
-            <h3> headline message </h3>
-            <p> Write an awesome intro and discuss your highlights and qualification. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-            <div class="links">
-                <a href="#projects">
-                    <i class="fa-solid fa-pen"></i>
-                    <span>Projects</span>
-                </a>
-                <a href="#skills">
-                    <i class="fa-solid fa-hammer"></i>
-                    <span>Skills</span>
-                </a>
-                <a href="#contact">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Contact Me</span>
-                </a>
-            </div>
-            
-        </div>
-        <div class="headshot">
-            <img src= ./assets/images/profile-image/avatar.jpeg alt="john doe headshot">       
-        </div>
-    </div>
-    
-</section>
+p {
+  color: var(--text-color);
+  font-size: calc(9px + 0.5vw);
+  margin-bottom: 1em;
+  padding: 0;
+}
 
+/* =========================
+   ✅ ABOUT SECTION FIX
+   =========================
+   This targets your About area if it uses id="bio"
+   (you already link to it with href="#bio").
+*/
+#bio {
+  padding: clamp(14px, 3.5vw, 40px);
+  margin: clamp(14px, 3.5vw, 40px) 0;
+}
 
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  height: 80px;
+  align-items: center;
+  position: relative;
+}
 
+nav .left a {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 600;
+}
 
+nav .right {
+  gap: 15px;
+}
 
-<div class="arrow"> 
-    <a href="#projects">
-        More About Me
-    <i class="fa-solid fa-angles-down"></i>
-    </a> 
-</div>
-<!-- SECTION 3: project -->
-<section id="projects" class="project-grid-section">
-    <h2>Projects</h2>
+nav .right a {
+  color: var(--text-color);
+  font-size: 23px;
+  margin-left: 30px;
+}
 
-    <div class="grid-container">
-        
-    <a href="/projects/demo-project/index/" class="project-link">
-        <div class="project-card">
-            
-            
-            <img src="/_projects/demo-project/project2.jpg" alt="Super Heavy Booster Catch (Demo Only) image">
-            <h3 class="project-title">Super Heavy Booster Catch (Demo Only)</h3>
-            <div class="project-skills">
-                
-                    <span class="skill">Structural analysis</span>
-                
-                    <span class="skill">Aerodynamic design</span>
-                
-                    <span class="skill">Propulsion system integration</span>
-                
-                    <span class="skill">Control Algorithem</span>
-                
-                    <span class="skill">Welding</span>
-                
-                    <span class="skill">Metal forming</span>
-                
-                    <span class="skill">Thermal simulation</span>
-                
-            </div>
-            <p class="project-description">(I have never been employed by / affiliated with SpaceX. This is for demo use only) Developing the Super Heavy booster catch project involves designing a robust launch tower with "chopstick" arms, advanced control systems for precise booster alignment, and integrating sophisticated software for real-time trajectory adjustments and structural engineering to handle immense forces.</p>
-            <button class="read-more">Read more →</button>
-        </div>
-    </a>
+nav .right a:last-child {
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+  padding: 3px 15px;
+  border-radius: 10px;
+}
 
-    <a href="/projects/sonos-teardown/sonos/" class="project-link">
-        <div class="project-card">
-            
-            
-            <img src="/_projects/sonos-teardownproject-image.webp" alt="Sonos teardown image">
-            <h3 class="project-title">Sonos teardown</h3>
-            <div class="project-skills">
-                
-                    <span class="skill">drumel</span>
-                
-                    <span class="skill">microprobing</span>
-                
-                    <span class="skill">Electronics Teardown</span>
-                
-                    <span class="skill">PCB analysis</span>
-                
-                    <span class="skill">audio system design</span>
-                
-            </div>
-            <p class="project-description">Conducted detailed teardown analysis of Sonos Era speaker, documenting internal components, driver configuration, and PCB design. Created technical documentation with photos and assembly insights for engineering reference.</p>
-            <button class="read-more">Read more →</button>
-        </div>
-    </a>
+nav .right a:last-child:hover,
+nav .mobile-nav a:last-child:hover {
+  color: var(--text-color);
+  background-color: var(--light-background-color);
+  border-radius: 10px;
+}
 
-    </div>
+/* Navbar Mobile Menu Button */
+nav .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
 
+nav .hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-color);
+  position: relative;
+  transition: background 0.2s;
+}
 
- </section>
+nav .hamburger::before,
+nav .hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--text-color);
+  transition: transform 0.2s;
+}
 
-<section id="skills" class="skills-section">
-    <h2>Skills</h2>
-        
-    <ul class="skill-categories">
-        
-          <li>
-            <div class="skills-card">
-              <span class="category-label">3D Modeling</span>
-            
-              <ul class="skills-list">
-                
-                  <li class="skill">
-                    Onshape
-                  </li>
-                
-                  <li class="skill">
-                    Solidworks
-                  </li>
-                
-                  <li class="skill">
-                    Creo
-                  </li>
-                
-                  <li class="skill">
-                    Fusion 360 (Autodesk)
-                  </li>
-                
-                  <li class="skill">
-                    Blender (for complex shapes or animations)
-                  </li>
-                
-                  <li class="skill">
-                    Siemens NX
-                  </li>
-                
-                  <li class="skill">
-                    Inventor (Autodesk)
-                  </li>
-                
-                  <li class="skill">
-                    CATIA (Dassault Systèmes)
-                  </li>
-                
-                </ul>
-            </div>
-            
-          </li> 
-        
-          <li>
-            <div class="skills-card">
-              <span class="category-label">Prototyping</span>
-            
-              <ul class="skills-list">
-                
-                  <li class="skill">
-                    SLA
-                  </li>
-                
-                  <li class="skill">
-                    CNC
-                  </li>
-                
-                  <li class="skill">
-                    FDM
-                  </li>
-                
-                  <li class="skill">
-                    SLS
-                  </li>
-                
-                  <li class="skill">
-                    DMLS
-                  </li>
-                
-                  <li class="skill">
-                    PolyJet Printing
-                  </li>
-                
-                  <li class="skill">
-                    Vacuum Casting
-                  </li>
-                
-                  <li class="skill">
-                    Laser Cutting
-                  </li>
-                
-                  <li class="skill">
-                    Water Jet Cutting
-                  </li>
-                
-                  <li class="skill">
-                    Arduino / Raspberry Pi
-                  </li>
-                
-                  <li class="skill">
-                    Breadboarding for circuit testing
-                  </li>
-                
-                </ul>
-            </div>
-            
-          </li> 
-        
-          <li>
-            <div class="skills-card">
-              <span class="category-label">Design Standards / Practices</span>
-            
-              <ul class="skills-list">
-                
-                  <li class="skill">
-                    GD&T ASME Y14
-                  </li>
-                
-                  <li class="skill">
-                    ISO fits and tolerances
-                  </li>
-                
-                  <li class="skill">
-                    PLM (PTC Windchill / Arena)
-                  </li>
-                
-                </ul>
-            </div>
-            
-          </li> 
-        
-          <li>
-            <div class="skills-card">
-              <span class="category-label">PCB Design</span>
-            
-              <ul class="skills-list">
-                
-                  <li class="skill">
-                    Altium Designer
-                  </li>
-                
-                  <li class="skill">
-                    Altium
-                  </li>
-                
-                  <li class="skill">
-                    Eagle
-                  </li>
-                
-                  <li class="skill">
-                    KiCad
-                  </li>
-                
-                </ul>
-            </div>
-            
-          </li> 
-        
-          <li>
-            <div class="skills-card">
-              <span class="category-label">Problem Solving / Risk Management</span>
-            
-              <ul class="skills-list">
-                
-                  <li class="skill">
-                    Root Cause Analysis (e.g., 5 Whys, Fishbone Diagram)
-                  </li>
-                
-                  <li class="skill">
-                    DFMEA / PFMEA
-                  </li>
-                
-                  <li class="skill">
-                    Six Sigma methodologies
-                  </li>
-                
-                  <li class="skill">
-                    Shain Red-X
-                  </li>
-                
-                </ul>
-            </div>
-            
-          </li> 
-        
-      </ul>
+nav .hamburger::before {
+  top: -8px;
+}
 
-</section>
-<!-- SECTION 4: Contact-->
-<section id="contact" class= "contact-section">
-    <h2>Contact</h2>
+nav .hamburger::after {
+  bottom: -8px;
+}
 
-    <div class="group">
-      
-        <form action="https://formspree.io/f/https://formspree.io/f/{8-digit key}" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name">
+nav .mobile-nav {
+  display: none;
+}
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+/* SECTION 1: Hero */
+.hero-section {
+  padding: 0 clamp(16px, 4vw, 50px);
+  margin: clamp(16px, 4vw, 50px) 0;
+  display: flex;
 
-            <label for="message">Message</label>
-            <textarea id="message" cols = "30" rows="10" name="message"></textarea>
+  border: 2px solid var(--border-color);
+  border-image: linear-gradient(
+      45deg,
+      var(--border-color) 1%,
+      transparent 1%,
+      transparent 99%,
+      var(--border-color) 99%
+    )
+    1;
+}
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-  </section>
-</div>
+.hero-section .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 40px;
+  border-radius: 8px;
+}
 
-     
-</body>
+.hero-section .text {
+  flex: 5;
+}
 
-    <footer>
-    <div class="footer-content">
-        <div class="links">
-            <a href="/">
-                <span>Home</span>
-            </a>
-            <a href="/projects/">
-                <span>Projects</span>
-            </a>
-            <a href=https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing target="_blank" rel="noopener noreferrer">
-                <span>Resume</span>
-            </a>
-        </div>
-    </div>
-    <div class="license">
-        <span>For any question or suggestion for the portfolio template or projects, reach out <a class="help" href="https://createdotshow.com"> Here</a> </span>
-        <p>FreeToEngineer portfolio template © 2025 by Aram Lee is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
-    </div>
-</footer>
-</html>
+.hero-section .text h2 {
+  font-size: 50px;
+}
+
+.hero-section .text .external-links i {
+  font-size: 20px;
+  padding: 0 5px;
+  color: var(--text-color);
+}
+
+.hero-section .text h3 {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.hero-section .text p {
+  margin-top: 15px;
+  font-size: 15px;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: var(--link-color);
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+
+.hero-section .text .links a span {
+  color: var(--link-color);
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot {
+  flex: 3;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* NAVIGATION ARROW */
+.arrow {
+  margin-top: 125px;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow a {
+  font-size: 20px;
+  color: var(--link-color);
+  display: inline-block;
+  align-items: center;
+  border: 2px solid var(--link-color);
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.arrow a > * {
+  display: block;
+  margin: 0 auto;
+}
+
+.arrow a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+/*SECTION 2: PROJECT GRID */
+.project-grid-section {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-grid-section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.project-grid-section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 25px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.project-grid-section .project-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.project-grid-section .grid-container .project-link .project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: var(--background-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.project-card .project-title {
+  font-size: 1.4em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.project-card .project-title:hover {
+  text-decoration: underline;
+}
+
+.project-card .project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+
+.project-card .project-skills .skill {
+  padding: 0 6px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  background-color: var(--light-background-color);
+  color: var(--link-color);
+  white-space: nowrap;
+}
+
+.project-card .project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  line-height: 1.5;
+  max-height: calc(1.5em * 4);
+}
+
+.project-card .read-more {
+  background-color: transparent;
+  border: none;
+  color: var(--highlight-color);
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 5px;
+  text-align: start;
+}
+
+.project-card .read-more:hover {
+  text-decoration: underline;
+}
+
+/* SECTION 3: SKILLS */
+.skills-section {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.skills-section .skill-categories {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-section .skill-categories .skills-card span {
+  margin-bottom: 10px;
+}
+
+.skills-section .skill-categories .skills-card {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.skills-section .skill-categories .category-label {
+  font-size: 20px;
+  display: grid;
+  font-weight: 600;
+}
+
+.skills-section .skill-categories .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-right: 10px;
+  gap: 8px;
+}
+
+.skills-section .skill-categories .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 8px;
+  background-color: var(--light-background-color);
+  color: var(--link-color);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* SECTION 4: CONTACT */
+.contact-section {
+  padding: 25px 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.contact-section .group {
+  display: flex;
+}
+
+.contact-section .group .text {
+  flex: 3;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  border: 1px groove var(--text-color);
+  padding: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  resize: none;
+  font-size: 13px;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+/* FOOTER */
+footer {
+  padding: 0;
+  font-size: 12px;
+  text-align: center;
+  min-height: 150px;
+  flex-shrink: 0;
+  background-color: var(--light-background-color);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+footer .footer-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .links {
+  margin-bottom: 20px;
+}
+
+footer .links a {
+  color: var(--text-color);
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+footer .links a:hover {
+  color: var(--link-color);
+}
+
+footer .license {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 0;
+}
+
+footer span,
+footer p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  margin: 0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* PROJECT POST VIEW */
+.post-view {
+  margin: 25px auto;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.post-view .summary {
+  padding: 25px 50px;
+}
+
+.post-view .title-header {
+  width: 100%;
+  display: flex;
+}
+
+.post-view .title-header h1 {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.post-view .summary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  aspect-ratio: 3/1;
+  margin-bottom: 10px;
+}
+
+.post-view .summary .project-description {
+  margin-bottom: 10px;
+}
+
+.post-view .summary .skills-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-view .summary .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 5px;
+}
+
+.post-view .summary .skill {
+  background-color: var(--light-background-color);
+  color: var(--link-color);
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+.post-view .content {
+  padding: 0 50px;
+  border-radius: 10px;
+}
+
+.post-view .content .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.post-view .content .image-gallery img {
+  max-height: var(--gallery-height);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.post-view .content a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 1em;
+}
+
+.post-view .content p {
+  margin-bottom: 1em;
+}
+
+.post-view .content a:hover {
+  color: #2980b9;
+}
+
+.post-view .content ul,
+.post-view .content ol {
+  padding-left: 20px;
+  margin: 1em 0;
+}
+
+.post-view .content blockquote {
+  border-left: 4px solid #3498db;
+  margin: 1em 0;
+  padding: 10px 20px;
+  background-color: var(--light-background-color);
+  color: var(--text-color);
+  font-size: calc(10px + 0.5vw);
+}
+
+.post-view .content hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+.post-view .content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  background-color: var(--light-background-color);
+}
+
+.post-view .content th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+  color: #495057;
+  font-size: calc(10px + 0.5vw);
+}
+
+.post-view .content td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  color: var(--text-color);
+  font-size: calc(10px + 0.5vw);
+}
+
+.youtube-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0;
+  padding: 5px;
+}
+
+.youtube-aspect-ratio {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.youtube-aspect-ratio iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  body {
+    padding: 0 20px;
+  }
+
+  .hero-section {
+    padding: 0 20px;
+    border: none;
+  }
+
+  .hero-section .group {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+    justify-content: center;
+  }
+
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+
+  .project-grid-section .grid-container .project-card {
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--light-background-color);
+    flex-direction: column;
+    border-top: 1px solid var(--border-color);
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+
+  .mobile-nav a {
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+  }
+
+  .menu-toggle.active .hamburger {
+    background: transparent;
+  }
+
+  .menu-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .hero-section .group .text h2 {
+    flex-direction: column-reverse;
+    display: flex;
+    font-size: 40px;
+  }
+
+  .hero-section .group .text h2 .external-links i {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .contact-section .group {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 0 35px;
+  }
+
+  footer .links a {
+    font-size: 15px;
+    margin: 0 15px;
+  }
+
+  footer .links {
+    margin-bottom: 10px;
+  }
+
+  .post-view {
+    margin: 0;
+  }
+
+  .post-view .content {
+    padding: 0 5px;
+    margin: 0;
+  }
+
+  .post-view .summary {
+    padding: 5px 5px;
+  }
+
+  .post-view.image-gallery {
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  .video-container {
+    margin: 0 auto;
+  }
+
+  /* ✅ mobile override for About section */
+  #bio {
+    padding: 14px;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  .hero-section .text .links a {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .skills-section {
+    padding: 0 5px;
+  }
+
+  .skills-section span {
+    font-size: 16px;
+  }
+
+  .contact-section {
+    padding: 0 20px;
+  }
+
+  .post-view {
+    margin: 5px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .post-view .content {
+    padding: 5px;
+  }
+}
