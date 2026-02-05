@@ -1,11 +1,15 @@
 ---
 layout: post
-title: Developing a Technological System to Assist Volleybal Referees and Improve Fair Play (2018) 
-description: For our final high school project (Profielwerkstuk), we developed a technological solution aimed at improving fairness in professional volleyball by assisting referees in making more accurate decisions. Our project addresses common issues such as misjudged touché balls and unclear in/out calls—errors that often lead to frustration, disputes, and unfair gameplay.
+title: Autonomous Rapid-Deployment Anti-Poaching Drone for Wildlife Protection South-Africa (2026) 
+description: For this internship at WILD international, I will help in the development of a rapid-response drone system to support anti-poaching operations in wildlife reserves. The system integrates RGB/LiDAR and thermal sensing to increase situational awareness and assist rangers in detecting and responding fast to threats day and night.
 skills: 
-- Arduino
+- ROS2
 - Raspberry Pi
-main-image: /PWSFront.png
+- C
+- Ardupilot
+- Radio Communications
+- CAD
+main-image: /AIGEN.png
 ---
 
 ## Project Documentation
