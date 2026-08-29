@@ -5,5 +5,5 @@ description:  short description of the project
 skills: 
 - Drone
 - C
-main-image: /project.webp 
+main-image: /img.png
 ---
