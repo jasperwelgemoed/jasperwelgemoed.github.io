@@ -5,5 +5,5 @@ description:  short description of the project
 skills: 
 - Drone
 - C
-main-image: /image.png
+main-image: _projects/0001_Thesis/image.png
 ---
